@@ -55,6 +55,7 @@ export default function Navigation() {
             </div>
            </nav>
           
+          {/* not sure about this Outlet thing? */}
            <div id="detail">
             <Outlet />
            </div>
