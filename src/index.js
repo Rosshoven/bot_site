@@ -14,7 +14,7 @@ import ErrorPage from "./error-page";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Root />,
+    element: <Navigation />,
     errorElement: <ErrorPage />,
     children: [
       {
@@ -27,7 +27,7 @@ const router = createBrowserRouter([
         element: <Home />
       },
       {
-        path: 'create-account',
+        path: 'about',
         element: <About />
       },
 
