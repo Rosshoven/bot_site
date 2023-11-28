@@ -25,18 +25,18 @@ export default function Navigation() {
         </li>
 
         <li className="nav-item">
-          <a href='about' className="nav-link">About</a>
+          <a href='about' className="nav-link active">About</a>
         </li>
 
         <li className="nav-item">
-          <a className="nav-link" href="/">Pics</a>
+          <a className="nav-link active" href="/">Pics</a>
         </li>
 
         <li className="nav-item dropdown">
-          <a href='/' className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a href='/' className="nav-link active dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Albums
           </a>
-          <ul class="dropdown-menu">
+          <ul className="dropdown-menu">
             <li><a className="dropdown-item" href="/album1">Album 1</a></li>
             <li><a className="dropdown-item" href="/about">Album 2</a></li>
             <li><a className="dropdown-item" href="/album3">Album 3</a></li>
