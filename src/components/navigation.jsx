@@ -3,19 +3,16 @@ import React from 'react';
 import { Outlet } from 'react-router-dom';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import BOT_Logo from "../images/BOT_Logo.png";
 
 export default function Navigation() {
   return (
-    // <nav>
-    //   <ul>
-    //     <li><Link to="/">Home</Link></li>
-    //     <li><NavLink to="/about">About</NavLink></li>
-    //   </ul>Name
-    // </nav>
-  <>
-  <nav style={{position: 'fixed', width: '100%', backgroundColor: 'darkgreen'}} className="navbar navbar-expand-lg bg-body-tertiary">
+<>
+  <nav className="navbar fixed-top navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
    <div className="container-fluid">
-    <a href='home' className="navbar-brand" >Navbar</a>
+    <a href='home' className="navbar-brand">
+      <img src={BOT_Logo} alt="Boys On Trial Logo" width="53" height="53" style={{borderRadius: '5%'}}></img>
+    </a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
@@ -32,19 +29,19 @@ export default function Navigation() {
         </li>
 
         <li className="nav-item">
-          <a className="nav-link" href="/">Pricing</a>
+          <a className="nav-link" href="/">Pics</a>
         </li>
 
-        {/* <li class="nav-item dropdown">
-          <NavLink className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown link
-          </NavLink>
+        <li className="nav-item dropdown">
+          <a href='/' className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Albums
+          </a>
           <ul class="dropdown-menu">
-            <li><a className="dropdown-item" href="#">Action</a></li>
-            <li><a className="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><a className="dropdown-item" href="/album1">Album 1</a></li>
+            <li><a className="dropdown-item" href="/about">Album 2</a></li>
+            <li><a className="dropdown-item" href="/album3">Album 3</a></li>
           </ul>
-        </li> */}
+        </li>
 
       </ul>
     </div>
@@ -53,10 +50,10 @@ export default function Navigation() {
 </nav>
   
 
-           <div id="detail">
-            <Outlet />
-           </div>
-            </>
+  <div id="detail">
+    <Outlet />
+  </div>
+</>
 )};
 
 
