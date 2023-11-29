@@ -10,6 +10,7 @@ import About from "./components/about";
 import Navigation from "./components/navigation";
 import ErrorPage from "./error-page";
 import Pics from "./components/pics";
+import Album from "./components/album";
 
 const router = createBrowserRouter([
   {
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
       {
         path: 'pics',
         element: <Pics />
+      },
+      {
+        path: 'album',
+        element: <Album />
       },
 
     ]

@@ -1,18 +1,42 @@
-import React from "react";
+// import React from "react";
 import Banner from "../images/Banner.jpg";
+import Album from "./album";
+import IITLTWD from "../images/IITLTWD.jpg";
+import Guan from "../images/Guan.jpg";
 
 export default function Home() {
     return (
         <div>
-            {/* <img style={{margin: "10% 0% 0%", width: "100%"}} src={Banner} alt="Boys On Trial Banner"/> */}
+            {/* BANNER */}
             <img style=
             // using rem and position fixed keeps the banner in place
             {{marginTop: '4.4rem', 
             width: '100%',
-            position: 'fixed',
+            position: 'static',
             }} 
-            src={Banner} className="img-fluid" alt="Boys On Trial Banner"></img>
-            {/* <h1 style={{marginTop: '10%'}} >HOME home HOME</h1> */}
+            src={Banner} className="img-fluid" alt="Boys On Trial Banner">
+            </img>
+
+            {/* ALBUMS */}
+            <div style={{
+                display: 'flex',
+                justifyContent: 'space-around',
+                flexWrap: 'wrap',
+                flexDirection: "row", 
+                backgroundColor: 'red',
+                // alignItems: 'center',
+                border: '1px solid silver',
+                // padding: '20px',
+                // marginTop: '2rem'
+                }}>
+                <Album image={IITLTWD} 
+                        description={'album cover for IITLTWD'}/>
+                <Album image={Guan} 
+                        description={'album cover for ¡Guantanamo Boy!'}/>
+
+            </div>
+
+
         </div>    
     );
 };

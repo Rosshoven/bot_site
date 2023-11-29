@@ -4,14 +4,15 @@ import { Outlet } from 'react-router-dom';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import BOT_Logo from "../images/BOT_Logo.png";
+// import Walking from "../images/Walking.jpg";
 
 export default function Navigation() {
   return (
 <>
-  <nav className="navbar fixed-top navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+  <nav className="navbar fixed-top navbar-expand-lg bg-body-tertiary" data-bs-theme="dark" style={{borderBottom: '.1px solid #f0f0f0'}}>
    <div className="container-fluid">
     <a href='home' className="navbar-brand">
-      <img src={BOT_Logo} alt="Boys On Trial Logo" width="53" height="53" style={{borderRadius: '5%'}}></img>
+      <img src={BOT_Logo} alt="Boys On Trial Logo" width="53" height="53" style={{borderRadius: '5%', border: '.7px solid silver'}}></img>
     </a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
@@ -37,7 +38,7 @@ export default function Navigation() {
             Albums
           </a>
           <ul className="dropdown-menu">
-            <li><a className="dropdown-item" href="/album1">Album 1</a></li>
+            <li><a className="dropdown-item" href="/album">Album 1</a></li>
             <li><a className="dropdown-item" href="/about">Album 2</a></li>
             <li><a className="dropdown-item" href="/album3">Album 3</a></li>
           </ul>
@@ -50,7 +51,7 @@ export default function Navigation() {
 </nav>
   
 
-  <div style={{margin: '0', padding: '0', backgroundColor: 'red'}} id="detail">
+  <div style={{ margin: '0', padding: '0', backgroundColor: 'red'}} id="detail">
     <Outlet />
   </div>
 </>
