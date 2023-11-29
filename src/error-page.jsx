@@ -12,6 +12,7 @@ export default function ErrorPage() {
       <p>
         <i>{error.statusText || error.message}</i>
       </p>
+      <button type="button" onClick={() => {window.location.href = "/"}}className="btn btn-outline-success">Back Home</button>
     </div>
   );
 }
