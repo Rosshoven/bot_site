@@ -1,8 +1,8 @@
 export default function pics() {
     return (
-        <>
-            PICS
-        </>
+        <div style={{marginTop: '10%'}}>
+            PICS OICS dskfjsdna
+        </div>
 
     );
 };
