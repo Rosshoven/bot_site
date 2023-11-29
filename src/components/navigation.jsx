@@ -29,7 +29,7 @@ export default function Navigation() {
         </li>
 
         <li className="nav-item">
-          <a className="nav-link active" href="/">Pics</a>
+          <a href='/pics' className="nav-link active">Pics</a>
         </li>
 
         <li className="nav-item dropdown">

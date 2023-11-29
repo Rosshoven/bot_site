@@ -8,8 +8,8 @@ import "./index.css";
 import Home from "./components/home";
 import About from "./components/about";
 import Navigation from "./components/navigation";
-import Root from "./components/root";
 import ErrorPage from "./error-page";
+import Pics from "./components/pics";
 
 const router = createBrowserRouter([
   {
@@ -29,6 +29,10 @@ const router = createBrowserRouter([
       {
         path: 'about',
         element: <About />
+      },
+      {
+        path: 'pics',
+        element: <Pics />
       },
 
     ]
