@@ -1,10 +1,11 @@
 
 
 
-export default function Album( { image, description,  }) { 
+
+export default function Album( { image, description, title }) { 
 
     return (
-<>
+<div style={{display: 'flex', flexDirection: 'column'}}>
 
     {/* <div style={{display: "flex", flexDirection: "column", border: "solid hotpink 1px", backgroundColor: 'hotpink', borderRadius: "5%", marginTop: "1%"}}>
         <div>{description}</div>
@@ -14,6 +15,7 @@ export default function Album( { image, description,  }) {
 
         {/* <picture> */}
             {/* <source srcset="..." type="image/svg+xml"></source> */}
+            <h2 style={{alignSelf: 'center', margin: '0'}}>{title}</h2>
             <img src={image} 
                  alt={description}
                  class="img-fluid"
@@ -21,7 +23,7 @@ export default function Album( { image, description,  }) {
                  </img>
         {/* </picture> */}
 
-</>
+</div>
 
     )
 };
