@@ -30,8 +30,10 @@ export default function Home() {
                 // marginTop: '2rem'
                 }}>
                 <Album image={IITLTWD} 
+                        title={`If it's the last thing we do...`}
                         description={'album cover for IITLTWD'}/>
-                <Album image={Guan} 
+                <Album image={Guan}
+                        title={`¡Guantanamo Boy!`} 
                         description={'album cover for ¡Guantanamo Boy!'}
                         // title={'¡Guantanamo Boy!'}
                         />
