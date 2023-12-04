@@ -52,7 +52,7 @@ export default function Navigation() {
 </nav>
   
 
-  <div style={{ margin: '0', padding: '0', backgroundColor: 'red'}} id="detail">
+  <div style={{ margin: '0', padding: '0'}} id="detail">
     <Outlet />
   </div>
 </>
