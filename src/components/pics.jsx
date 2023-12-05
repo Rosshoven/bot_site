@@ -25,6 +25,8 @@ export default function Pics() {
         width: '100%',
         height: '100%',
         margin: '4.5rem 0', 
+        opacity: '',
+        filter: 'grayscale(20%) sepia(10%) contrast(100%) brightness(90%)',
         // padding: '0',
       };
       
