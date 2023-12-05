@@ -6,9 +6,17 @@ const centering = {
     flexDirection: 'column',
     marginTop: '4.4rem',
     flexWrap: 'wrap',
+    paddingTop: '4.4'
 }
 
-const PhotoCarousel = ({ images, interval = 4000 }) => {
+const buttonStyle = {
+    border: '2px solid black', 
+    height: '3rem', 
+    backgroundColor: 'black',
+    color: 'pink'
+}
+
+const PhotoCarousel = ({ images, interval = 3000 }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [isPaused, setIsPaused] = useState(false)
   
@@ -43,12 +51,12 @@ const PhotoCarousel = ({ images, interval = 4000 }) => {
 
     return (
       <div className="photo-carousel" style={centering}>
-        <h1>Photo Carousel</h1>
-        <div style={{display: 'flex', flexDirection: 'row'}}>
-            <button onClick={prevImage} style={{border: '2px solid black'}}>Previous</button>
+        <h1 style={{marginTop: '5.4rem', backgroundColor: 'black', color: 'pink', padding: '1rem', borderRadius: '1rem'}}>Boys Photo Carousel</h1>
+        <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', flexWrap: 'wrap'}}>
+            <button className='btn btn-outline-dark' onClick={prevImage} style={buttonStyle}>Previous</button>
             <img src={images[currentIndex]} alt={`${currentIndex + 1}`} style={{border: '12px solid black'}} onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}/>
-            <button onClick={nextImage}style={{border: '2px solid black'}}>Next</button>
+            <button type='button' className='btn btn-outline-dark' onClick={nextImage}style={buttonStyle}>Next</button>
         </div>
       </div>
     );
