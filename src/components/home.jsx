@@ -35,7 +35,6 @@ export default function Home() {
                 <Album image={Guan}
                         title={`¡Guantanamo Boy!`} 
                         description={'album cover for ¡Guantanamo Boy!'}
-                        // title={'¡Guantanamo Boy!'}
                         />
 
             </div>

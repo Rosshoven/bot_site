@@ -18,7 +18,7 @@ export default function Album( { image, description, title }) {
             <h2 style={{alignSelf: 'center', margin: '0'}}>{title}</h2>
             <img src={image} 
                  alt={description}
-                 class="img-fluid"
+                 className="img-fluid"
                  style={{margin: '1rem', width: '350px', height: '350px', border: '3px solid silver', borderRadius: '1.5%' }}>
                  </img>
         {/* </picture> */}

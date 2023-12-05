@@ -52,7 +52,9 @@ export default function Navigation() {
 </nav>
   
 
-  <div style={{ margin: '0', padding: '0'}} id="detail">
+  <div style={{ margin: '0', padding: '0', 
+  // backgroundImage: `url(${Logo_Pink})`, backgroundSize: '100%'
+  }} id="detail">
     <Outlet />
   </div>
 </>
