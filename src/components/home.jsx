@@ -1,10 +1,16 @@
-// import React from "react";
 import Banner from "../images/Banner.jpg";
 import Album from "./album";
 import IITLTWD from "../images/IITLTWD.jpg";
 import Guan from "../images/Guan.jpg";
 
 export default function Home() {
+
+    const footerStyle = {
+        padding: '1%',
+        backgroundColor: 'black',
+        color: 'white', 
+    }
+
     return (
         <div>
             {/* BANNER */}
@@ -23,7 +29,7 @@ export default function Home() {
                 justifyContent: 'space-around',
                 flexWrap: 'wrap',
                 flexDirection: "row", 
-                backgroundColor: 'red',
+                backgroundColor: 'pink',
                 // alignItems: 'center',
                 border: '1px solid silver',
                 // padding: '20px',
@@ -37,6 +43,11 @@ export default function Home() {
                         description={'album cover for ¡Guantanamo Boy!'}
                         />
 
+            </div>
+            <div style={{backgroundColor: 'red', display: 'flex'}}>
+                <h6 style={footerStyle}>©2023DADADesigns</h6> 
+                <h6 style={footerStyle}>Photos by Johanna</h6> 
+                <h6 style={footerStyle}>Logo by Blake</h6>
             </div>
 
 
