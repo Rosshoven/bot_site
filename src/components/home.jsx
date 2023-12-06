@@ -6,9 +6,10 @@ import Guan from "../images/Guan.jpg";
 export default function Home() {
 
     const footerStyle = {
-        padding: '1%',
         backgroundColor: 'black',
-        color: 'white', 
+        color: 'white',  
+        margin: '0', 
+        padding: '.4%'
     }
 
     return (
@@ -44,10 +45,10 @@ export default function Home() {
                         />
 
             </div>
-            <div style={{backgroundColor: 'red', display: 'flex'}}>
-                <h6 style={footerStyle}>©2023DADADesigns</h6> 
-                <h6 style={footerStyle}>Photos by Johanna</h6> 
-                <h6 style={footerStyle}>Logo by Blake</h6>
+            <div style={{display: 'flex', justifyContent: 'left', background: 'black'}}>
+                <h6 style={footerStyle}>&nbsp;©2023DADADesigns&nbsp;</h6> 
+                <h6 style={footerStyle}>&nbsp;&nbsp;Photos by Johanna&nbsp;</h6> 
+                <h6 style={footerStyle}>&nbsp;&nbsp;Logo by Blake&nbsp;</h6>
             </div>
 
 
