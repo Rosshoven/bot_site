@@ -8,7 +8,7 @@ import Fireplay from '../tracks/Fireplay.mp3';
 export default function If() {
 
     return(
-<div>
+<div style={{ backgroundColor: 'pink'}}>
     <div style={{display: 'flex', flexDirection: 'row'}}>
         <Album image={IITLTWD} 
                description={`If it's the last thing we do Album Cover`} 
