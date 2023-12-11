@@ -12,11 +12,17 @@ export default function If() {
     <div style={{display: 'flex', flexDirection: 'row'}}>
         <Album image={IITLTWD} 
                description={`If it's the last thing we do Album Cover`} 
-               albumTitle={`If it's the last thing we do...`}/>
-
-        <div style={{display: 'flex', flexDirection: 'column'}}>   
-                 <h4></h4>     
-        </div> 
+               albumTitle={`If it's the last thing we do...`}
+               albumDetail1={`Recorded by Boys On Trial`}
+               albumDetail2={`@ Bearfux Troy's in Chicago`}
+               albumDetail3={`Top floor SW corner Kedzie & Armitage`}
+               albumDetail4={`Spring 2008`}
+               albumDetail5={`Masterd By Ken`}
+               albumDetail6={`Michael.g/v`}
+               albumDetail7={`Colin.d`}
+               albumDetail8={`Ken.b`}
+               albumDetail9={`Cover pic from last soundcheck, Reggie's Rock Room`}
+               />
     </div>    
         <AudioPlayer src={Rex} />
         <AudioPlayer src={Fireplay} />
