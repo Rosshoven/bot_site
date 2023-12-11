@@ -2,6 +2,7 @@ import Banner from "../images/Banner.jpg";
 import Album from "./album";
 import IITLTWD from "../images/IITLTWD.jpg";
 import Guan from "../images/Guan.jpg";
+import AlbumMusicPlayer from "./player";
 
 export default function Home() {
 
@@ -51,6 +52,10 @@ export default function Home() {
                         description={'album cover for ¡Guantanamo Boy!'}
                         />        
             </div>
+
+        {/* Player */}
+        <AlbumMusicPlayer />
+
             
         {/* Footer */}
             <div style={{display: 'flex', justifyContent: 'left', background: 'black'}}>
