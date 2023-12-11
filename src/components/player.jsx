@@ -17,7 +17,7 @@ export default function Player() {
 <>
     <Album image={IITLTWD} />
     <AudioPlayer
-    autoPlay
+    // autoPlay
     src={Rex}
     onPlay={e => console.log("Listening to Rawk n Roll")}
     // other props here

@@ -11,6 +11,7 @@ import Navigation from "./components/navigation";
 import ErrorPage from "./error-page";
 import Pics from "./components/pics";
 import Album from "./components/album";
+import If from "./components/if";
 
 const router = createBrowserRouter([
   {
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
       {
         path: 'album',
         element: <Album />
+      },
+      {
+        path: 'if',
+        element: <If />
       },
 
     ]
