@@ -2,7 +2,7 @@ import Banner from "../images/Banner.jpg";
 import Album from "./album";
 import IITLTWD from "../images/IITLTWD.jpg";
 import Guan from "../images/Guan.jpg";
-import AlbumMusicPlayer from "./player";
+import Player from "./player";
 
 export default function Home() {
 
@@ -54,7 +54,7 @@ export default function Home() {
             </div>
 
         {/* Player */}
-        <AlbumMusicPlayer />
+        <Player/>
 
             
         {/* Footer */}
