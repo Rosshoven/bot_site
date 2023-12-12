@@ -43,27 +43,27 @@ export default function Album( { image, description, albumTitle, albumDetail1, a
             </img>
         </div>    
             ) : ( 
-          <div style={{display: 'flex', flexDirection: 'row', alignItems: 'center',
+          <div style={{display: 'flex', flexDirection: 'row',
               justifyContent: 'center', flexWrap: 'wrap'}}>
-            <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'
+            <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-evenly', alignItems: 'center'
                     ,width: '400px', height: '400px', border: '3px solid silver', 
                     borderRadius: '1.5%'}} onMouseLeave={() => setBackCover(false)}
             > 
                 <h4>{albumDetail1}</h4>
                 <h4>{albumDetail2}</h4>
                 <h4>{albumDetail3}</h4>
-                <h4>{albumDetail4}</h4>
-                <h4>{albumDetail5}</h4>
+                <h5>{albumDetail4}</h5>
+                <h5>{albumDetail5}</h5>
                 <h5>{albumDetail6}</h5>
-                <h5>{albumDetail7}</h5>
-                <h5>{albumDetail8}</h5>
+                <h6>{albumDetail7}</h6>
+                <h6>{albumDetail8}</h6>
                 <h6>{albumDetail9}</h6>
             </div>
           </div> )}
 
         </div>   
 
-        <figure style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+        <figure style={{display: 'flex', flexDirection: 'column', alignItems: 'center', border: '2px solid silver', backgroundColor: 'silver', borderRadius: '1rem'}}>
             {/* <h1>{albumTitle}</h1>     */}
             <figcaption>{songTitle1}</figcaption>
             <audio controls src={track1} style={audioStyle}/>
