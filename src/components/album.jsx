@@ -12,7 +12,6 @@ export default function Album( { image, description, albumTitle, albumDetail1, a
     }
 
     const coverStyle = {
-        marginRight: '1rem', 
         width: '350px', 
         height: '350px', 
         border: '3px solid silver', 
@@ -22,15 +21,18 @@ export default function Album( { image, description, albumTitle, albumDetail1, a
     const [backCover, setBackCover] = useState(false);
 
     return (
-<div style={{padding: '0', margin: '0 auto'}} >
-    <div >
-        <div style={{margin: '7rem auto 1.2rem', display: 'flex', flexDirection: 'column',alignItems: 'center'}}>
+<div style={{padding: '0', margin: '0 auto'}}>
+    
+    <div style={{margin: '7rem 0 1.2rem', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
         
             <h1>{albumTitle}</h1>       
        
         {!backCover ? (
-        <div style={{display: 'flex', flexDirection: 'row', 
-                    margin: '1rem auto 1.4rem', flexWrap: 'wrap'}}>
+        <div style={{display: 'flex', flexDirection: 'row',
+        justifyContent: 'center', flexWrap: 'wrap'}}
+                    // {{display: 'flex', flexDirection: 'row', 
+                    // margin: '1rem auto 1.4rem', flexWrap: 'wrap'}}
+                    >
         
             <img src={image} 
                  alt={description}
@@ -42,7 +44,7 @@ export default function Album( { image, description, albumTitle, albumDetail1, a
         </div>    
             ) : ( 
           <div style={{display: 'flex', flexDirection: 'row', alignItems: 'center',
-              justifyContent: 'center', margin: '1rem auto 1.4rem', flexWrap: 'wrap'}}>
+              justifyContent: 'center', flexWrap: 'wrap'}}>
             <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'
                     ,width: '350px', height: '350px', border: '3px solid silver', 
                     borderRadius: '1.5%'}} onMouseLeave={() => setBackCover(false)}
@@ -58,6 +60,7 @@ export default function Album( { image, description, albumTitle, albumDetail1, a
                 <h6>{albumDetail9}</h6>
             </div>
           </div> )}
+
         </div>   
 
         <figure style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
@@ -70,8 +73,7 @@ export default function Album( { image, description, albumTitle, albumDetail1, a
 
             <figcaption>{songTitle3}</figcaption>   
             <audio controls src={track3} style={audioStyle}/>
-        
         </figure>   
-    </div>   
+
 </div> )
 };
