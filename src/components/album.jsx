@@ -12,8 +12,8 @@ export default function Album( { image, description, albumTitle, albumDetail1, a
     }
 
     const coverStyle = {
-        width: '350px', 
-        height: '350px', 
+        width: '400px', 
+        height: '400px', 
         border: '3px solid silver', 
         borderRadius: '1.5%'
     }
@@ -46,7 +46,7 @@ export default function Album( { image, description, albumTitle, albumDetail1, a
           <div style={{display: 'flex', flexDirection: 'row', alignItems: 'center',
               justifyContent: 'center', flexWrap: 'wrap'}}>
             <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'
-                    ,width: '350px', height: '350px', border: '3px solid silver', 
+                    ,width: '400px', height: '400px', border: '3px solid silver', 
                     borderRadius: '1.5%'}} onMouseLeave={() => setBackCover(false)}
             > 
                 <h4>{albumDetail1}</h4>
