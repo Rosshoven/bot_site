@@ -24,13 +24,13 @@ export default function Album( { image, description, albumTitle, albumDetail1, a
     return (
 <div style={{padding: '0', margin: '0 auto'}} >
     <div >
-        <div style={{margin: '7rem auto 1.4rem', display: 'flex', flexDirection: 'column',alignItems: 'center'}}>
+        <div style={{margin: '7rem auto 1.2rem', display: 'flex', flexDirection: 'column',alignItems: 'center'}}>
         
             <h1>{albumTitle}</h1>       
        
         {!backCover ? (
-        <div style={{display: 'flex', flexDirection: 'row', alignItems: 'center',
-              justifyContent: 'center', margin: '1rem auto 1.4rem', flexWrap: 'wrap'}}>
+        <div style={{display: 'flex', flexDirection: 'row', 
+                    margin: '1rem auto 1.4rem', flexWrap: 'wrap'}}>
         
             <img src={image} 
                  alt={description}
