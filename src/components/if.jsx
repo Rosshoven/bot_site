@@ -1,7 +1,7 @@
 // import AudioPlayer from 'react-h5-audio-player';
 import 'react-h5-audio-player/lib/styles.css';
 import Album from './album';
-import IITLTWD from '../images/IITLTWD.jpg';
+import IF from '../images/IF.png';
 import Rex from '../tracks/Rex.mp3';
 import Fireplay from '../tracks/Fireplay.mp3';
 import LookLeft from '../tracks/LookLeft.mp3'
@@ -13,7 +13,7 @@ export default function If() {
     return(
 
     <div style={{backgroundColor: 'pink', padding: '2rem'}}>
-        <Album image={IITLTWD} 
+        <Album image={IF} 
                description={`If it's the last thing we do Album Cover`} 
                albumTitle={`If it's the last thing we do...`}
                albumDetail1={`Recorded by Boys On Trial`}
