@@ -6,15 +6,20 @@ export default function Album( { image, description, albumTitle, albumDetail1, a
 
 
     const audioStyle = {
-        padding: '0 0 1rem',
+        margin: '0 0 .5rem',
+        border: 'solid green 1.5px',
+        borderRadius: '2rem'
     }
 
     return (
 <div style={{padding: '0', margin: '0 auto'}} >
+    <div style={{margin: '7rem auto 1.4rem', display: 'flex', flexDirection: 'column',alignItems: 'center'}}>
         
+        <h1>{albumTitle}</h1>       
+       
         <div style={{display: 'flex', flexDirection: 'row', alignItems: 'center',
         justifyContent: 'center',
-        margin: '7rem auto 1.4rem', flexWrap: 'wrap'}}>
+        margin: '1rem auto 1.4rem', flexWrap: 'wrap'}}>
             
             <img src={image} 
                  alt={description}
@@ -36,7 +41,8 @@ export default function Album( { image, description, albumTitle, albumDetail1, a
                 <h6>{albumDetail9}</h6>
             </div>
         </div>
-        
+    </div>   
+
         <figure style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
             <h1>{albumTitle}</h1>    
             <figcaption>{songTitle1}</figcaption>
