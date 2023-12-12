@@ -1,10 +1,12 @@
-import AudioPlayer from 'react-h5-audio-player';
+// import AudioPlayer from 'react-h5-audio-player';
 import 'react-h5-audio-player/lib/styles.css';
 import Album from './album';
 import IITLTWD from '../images/IITLTWD.jpg';
 import Rex from '../tracks/Rex.mp3';
 import Fireplay from '../tracks/Fireplay.mp3';
 import LookLeft from '../tracks/LookLeft.mp3'
+import SaySometing from '../tracks/SaySomething.mp3';
+import GetInLine from '../tracks/GetInLine.mp3';
 
 export default function If() {
 
@@ -24,11 +26,17 @@ export default function If() {
                albumDetail8={`*Top floor SW corner Kedzie/Armitage`}
                albumDetail9={`Cover from last soundcheck, Reggie's Rock Room`}
                songTitle1={`Rex`}
-               track1={Rex}
                songTitle2={`Fireplay`}
-               track2={Fireplay}
                songTitle3={`Look Left`}
+               songTitle4={`Say Something`}
+               songTitle5={`Get In Line`}
+               track1={Rex}
+               track2={Fireplay}
                track3={LookLeft}
+               track4={SaySometing}
+               track5={GetInLine}
+               backgroundColor={'silver'}
+               border={'green 2px solid'}
                />
     </div>    
         {/* <AudioPlayer src={Rex} /> 

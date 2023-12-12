@@ -2,13 +2,13 @@ import { useState } from "react";
 
 
 
-export default function Album( { image, description, albumTitle, albumDetail1, albumDetail2, albumDetail3, albumDetail4, albumDetail5, albumDetail6, albumDetail7, albumDetail8, albumDetail9, songTitle1, songTitle2, songTitle3, track1, track2, track3}) { 
+export default function Album( { image, description, albumTitle, albumDetail1, albumDetail2, albumDetail3, albumDetail4, albumDetail5, albumDetail6, albumDetail7, albumDetail8, albumDetail9, songTitle1, songTitle2, songTitle3, songTitle4, songTitle5, track1, track2, track3, track4, track5, backgroundColor, border}) { 
 
 
     const audioStyle = {
-        margin: '0 0 .5rem',
+        margin: '0 0 .7rem',
         border: 'solid green 1.5px',
-        borderRadius: '2rem'
+        borderRadius: '2rem',
     }
 
     const coverStyle = {
@@ -44,7 +44,7 @@ export default function Album( { image, description, albumTitle, albumDetail1, a
         </div>    
             ) : ( 
           <div style={{display: 'flex', flexDirection: 'row',
-              justifyContent: 'center', flexWrap: 'wrap'}}>
+              justifyContent: 'center', flexWrap: 'wrap', backgroundColor, border}} >
             <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-evenly', alignItems: 'center'
                     ,width: '400px', height: '400px', border: '3px solid silver', 
                     borderRadius: '1.5%'}} onMouseLeave={() => setBackCover(false)}
@@ -73,6 +73,12 @@ export default function Album( { image, description, albumTitle, albumDetail1, a
 
             <figcaption>{songTitle3}</figcaption>   
             <audio controls src={track3} style={audioStyle}/>
+
+            <figcaption>{songTitle4}</figcaption>   
+            <audio controls src={track4} style={audioStyle}/>
+
+            <figcaption>{songTitle5}</figcaption>   
+            <audio controls src={track5} style={audioStyle}/>
         </figure>   
 
 </div> )
