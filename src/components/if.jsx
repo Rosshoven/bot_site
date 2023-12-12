@@ -4,6 +4,7 @@ import Album from './album';
 import IITLTWD from '../images/IITLTWD.jpg';
 import Rex from '../tracks/Rex.mp3';
 import Fireplay from '../tracks/Fireplay.mp3';
+import LookLeft from '../tracks/LookLeft.mp3'
 
 export default function If() {
 
@@ -18,14 +19,20 @@ export default function If() {
                albumDetail3={`Top floor SW corner Kedzie & Armitage`}
                albumDetail4={`Spring 2008`}
                albumDetail5={`Masterd By Ken`}
-               albumDetail6={`Michael.g/v`}
+               albumDetail6={`Michael.gv`}
                albumDetail7={`Colin.d`}
                albumDetail8={`Ken.b`}
                albumDetail9={`Cover pic from last soundcheck, Reggie's Rock Room`}
+               songTitle1={`Rex`}
+               track1={Rex}
+               songTitle2={`Fireplay`}
+               track2={Fireplay}
+               songTitle3={`Look Left`}
+               track3={LookLeft}
                />
     </div>    
-        <AudioPlayer src={Rex} />
-        <AudioPlayer src={Fireplay} />
+        {/* <AudioPlayer src={Rex} /> 
+        <AudioPlayer src={Fireplay} />  */}
 
 </div>
 
@@ -33,4 +40,4 @@ export default function If() {
  )
 
 
-}
+    }
