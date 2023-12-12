@@ -1,4 +1,4 @@
-
+import { useState } from "react";
 
 
 
@@ -11,25 +11,42 @@ export default function Album( { image, description, albumTitle, albumDetail1, a
         borderRadius: '2rem'
     }
 
+    const coverStyle = {
+        marginRight: '1rem', 
+        width: '350px', 
+        height: '350px', 
+        border: '3px solid silver', 
+        borderRadius: '1.5%'
+    }
+
+    const [backCover, setBackCover] = useState(false);
+
     return (
 <div style={{padding: '0', margin: '0 auto'}} >
-    <div style={{margin: '7rem auto 1.4rem', display: 'flex', flexDirection: 'column',alignItems: 'center'}}>
+    <div >
+        <div style={{margin: '7rem auto 1.4rem', display: 'flex', flexDirection: 'column',alignItems: 'center'}}>
         
-        <h1>{albumTitle}</h1>       
+            <h1>{albumTitle}</h1>       
        
+        {!backCover ? (
         <div style={{display: 'flex', flexDirection: 'row', alignItems: 'center',
-        justifyContent: 'center',
-        margin: '1rem auto 1.4rem', flexWrap: 'wrap'}}>
-            
+              justifyContent: 'center', margin: '1rem auto 1.4rem', flexWrap: 'wrap'}}>
+        
             <img src={image} 
                  alt={description}
                  className="img-fluid"
-                 style={{marginRight: '1rem', width: '350px', height: '350px', border: '3px solid silver', borderRadius: '1.5%' }}>
-            </img>  
-
-            <div style={{display: 'flex', flexDirection: 'column', alignItems: 'self-start'
-            ,width: '350px', height: '350px'
-            }}> 
+                 style={coverStyle}
+                 onMouseEnter={() => setBackCover(true)}
+                 >   
+            </img>
+        </div>    
+            ) : ( 
+          <div style={{display: 'flex', flexDirection: 'row', alignItems: 'center',
+              justifyContent: 'center', margin: '1rem auto 1.4rem', flexWrap: 'wrap'}}>
+            <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'
+                    ,width: '350px', height: '350px', border: '3px solid silver', 
+                    borderRadius: '1.5%'}} onMouseLeave={() => setBackCover(false)}
+            > 
                 <h4>{albumDetail1}</h4>
                 <h4>{albumDetail2}</h4>
                 <h4>{albumDetail3}</h4>
@@ -40,11 +57,11 @@ export default function Album( { image, description, albumTitle, albumDetail1, a
                 <h5>{albumDetail8}</h5>
                 <h6>{albumDetail9}</h6>
             </div>
-        </div>
-    </div>   
+          </div> )}
+        </div>   
 
         <figure style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-            <h1>{albumTitle}</h1>    
+            {/* <h1>{albumTitle}</h1>     */}
             <figcaption>{songTitle1}</figcaption>
             <audio controls src={track1} style={audioStyle}/>
 
@@ -55,6 +72,6 @@ export default function Album( { image, description, albumTitle, albumDetail1, a
             <audio controls src={track3} style={audioStyle}/>
         
         </figure>   
-        
+    </div>   
 </div> )
 };
