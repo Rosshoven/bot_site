@@ -40,7 +40,7 @@ export default function Navigation() {
           </a>
           <ul className="dropdown-menu">
             <li><a className="dropdown-item" href="/if">If it's the last thing we do</a></li>
-            <li><a className="dropdown-item" href="/about">Album 2</a></li>
+            <li><a className="dropdown-item" href="/guan">¡Guantanamo Boy!</a></li>
             <li><a className="dropdown-item" href="/album3">Album 3</a></li>
           </ul>
         </li>
