@@ -14,26 +14,40 @@ export default function Album( { image, description, albumTitle, albumDetail1, a
     const coverStyle = {
         width: '400px', 
         height: '400px', 
-        border: '3px solid silver', 
-        borderRadius: '1.5%'
+        borderRadius: '1.5%', 
+        border: '.7px solid silver',
+        marginRight: '1rem',
+        boxShadow: '4px 4px 20px rgba(55, 24, 3, 1)',
+  }
+
+    const tracksStyle = {
+        width: '330px', 
+        height: '330px', 
+        borderRadius: '1.5%',
+        display: 'flex', 
+        flexDirection: 'column', 
+        alignItems: 'center', 
+        margin: '1rem',
+        backgroundColor,
+        border,
+        boxShadow: '2px 2px 12px rgba(55, 24, 3, 1)',
     }
+
+    
 
     const [backCover, setBackCover] = useState(false);
 
     return (
-<div style={{padding: '0', margin: '0 auto'}}>
-    
-    <div style={{margin: '7rem 0 1.2rem', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-        
-            <h1>{albumTitle}</h1>       
-       
-        {!backCover ? (
-        <div style={{display: 'flex', flexDirection: 'row',
-        justifyContent: 'center', flexWrap: 'wrap'}}
-                    // {{display: 'flex', flexDirection: 'row', 
-                    // margin: '1rem auto 1.4rem', flexWrap: 'wrap'}}
-                    >
-        
+
+    <div style={{display: 'flex', 
+    flexDirection: 'row', justifyContent: 'center', alignItems: 'center', alignContent:'space-evenly', 
+    flexWrap: 'wrap', 
+    margin: '9rem auto'}}>
+            
+
+        {/* Album Front/Back */}    
+        {!backCover ? (  
+
             <img src={image} 
                  alt={description}
                  className="img-fluid"
@@ -41,14 +55,13 @@ export default function Album( { image, description, albumTitle, albumDetail1, a
                  onMouseEnter={() => setBackCover(true)}
                  >   
             </img>
-        </div>    
-            ) : ( 
-          <div style={{display: 'flex', flexDirection: 'row',
-              justifyContent: 'center', flexWrap: 'wrap', backgroundColor, border}} >
-            <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-evenly', alignItems: 'center'
-                    ,width: '400px', height: '400px', border: '3px solid silver', 
-                    borderRadius: '1.5%'}} onMouseLeave={() => setBackCover(false)}
-            > 
+
+         ) : ( 
+
+            <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-evenly', alignItems: 'center', width: '400px', height: '400px', marginRight: '1rem', backgroundColor, border, borderRadius: '1.5%', 
+                boxShadow: '4px 4px 20px rgba(55, 24, 3, 1)',}} 
+                onMouseLeave={() => setBackCover(false)}>
+
                 <h4>{albumDetail1}</h4>
                 <h4>{albumDetail2}</h4>
                 <h4>{albumDetail3}</h4>
@@ -59,11 +72,12 @@ export default function Album( { image, description, albumTitle, albumDetail1, a
                 <h6>{albumDetail8}</h6>
                 <h6>{albumDetail9}</h6>
             </div>
-          </div> )}
+           
+           )}
 
-        </div>   
 
-        <figure style={{display: 'flex', flexDirection: 'column', alignItems: 'center', border: '2px solid silver', backgroundColor: 'silver', borderRadius: '1rem'}}>
+        {/* Tracks */}
+        <figure style={tracksStyle}>
             {/* <h1>{albumTitle}</h1>     */}
             <figcaption>{songTitle1}</figcaption>
             <audio controls src={track1} style={audioStyle}/>
@@ -81,5 +95,7 @@ export default function Album( { image, description, albumTitle, albumDetail1, a
             <audio controls src={track5} style={audioStyle}/>
         </figure>   
 
-</div> )
+    </div>
+
+)
 };

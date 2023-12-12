@@ -11,8 +11,8 @@ import GetInLine from '../tracks/GetInLine.mp3';
 export default function If() {
 
     return(
-<div style={{ backgroundColor: 'pink'}}>
-    <div style={{display: 'flex', flexDirection: 'row'}}>
+
+    <div style={{backgroundColor: 'pink', padding: '2rem'}}>
         <Album image={IITLTWD} 
                description={`If it's the last thing we do Album Cover`} 
                albumTitle={`If it's the last thing we do...`}
@@ -38,14 +38,11 @@ export default function If() {
                backgroundColor={'silver'}
                border={'green 2px solid'}
                />
-    </div>    
-        {/* <AudioPlayer src={Rex} /> 
+    </div>           
+      
+)
+}
+
+
+     {/* <AudioPlayer src={Rex} /> 
         <AudioPlayer src={Fireplay} />  */}
-
-</div>
-
-
- )
-
-
-    }
