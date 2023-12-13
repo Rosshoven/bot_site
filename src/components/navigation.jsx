@@ -4,8 +4,7 @@ import { Outlet } from 'react-router-dom';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import BOT_Logo from "../images/BOT_Logo.png";
-// import Logo_Pink from "../images/Logo_Pink.png";
-// import Walking from "../images/Walking.jpg";
+
 
 export default function Navigation() {
   return (
