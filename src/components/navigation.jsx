@@ -40,7 +40,7 @@ export default function Navigation() {
           <ul className="dropdown-menu">
             <li><a className="dropdown-item" href="/if">If it's the last thing we do</a></li>
             <li><a className="dropdown-item" href="/guan">¡Guantanamo Boy!</a></li>
-            <li><a className="dropdown-item" href="/album3">Album 3</a></li>
+            <li><a className="dropdown-item" href="/grail">test..Holy Grail</a></li>
           </ul>
         </li>
 
@@ -51,7 +51,7 @@ export default function Navigation() {
 </nav>
   
 
-  <div style={{ margin: '0', padding: '0', 
+  <div style={{ margin: '0', padding: '0', boxSizing: 'border-box' 
   // backgroundImage: `url(${Logo_Pink})`, backgroundSize: '100%'
   }} id="detail">
     <Outlet />

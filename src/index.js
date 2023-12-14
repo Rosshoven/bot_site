@@ -13,6 +13,7 @@ import Pics from "./components/pics";
 import Album from "./components/album";
 import If from "./components/if";
 import Guan from "./components/guan";
+import Grail from '../src/components/grail';
 
 const router = createBrowserRouter([
   {
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
       {
         path: 'guan',
         element: <Guan />
+      },
+      {
+        path: 'grail',
+        element: <Grail />
       },
 
     ]
