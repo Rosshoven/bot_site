@@ -1,7 +1,7 @@
 import Banner from "../images/Banner.jpg";
 import Album from "./album";
 import IITLTWD from "../images/IITLTWD.jpg";
-import Guan from "../images/Guan.jpg";
+import GuanCov from "../images/GuanCov.jpg";
 import Player from "./player";
 
 export default function Home() {
@@ -40,14 +40,14 @@ export default function Home() {
                 <Album image={IITLTWD} 
                         title={`If it's the last thing we do...`}
                         description={'album cover for IITLTWD'}/>
-                <Album image={Guan}
+                <Album image={GuanCov}
                         title={`¡Guantanamo Boy!`} 
                         description={'album cover for ¡Guantanamo Boy!'}
                         />
                 <Album image={IITLTWD} 
                         title={`If it's the last thing we do...`}
                         description={'album cover for IITLTWD'}/>
-                <Album image={Guan}
+                <Album image={GuanCov}
                         title={`¡Guantanamo Boy!`} 
                         description={'album cover for ¡Guantanamo Boy!'}
                         />        
