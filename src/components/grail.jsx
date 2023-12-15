@@ -13,19 +13,14 @@ export default function Grail() {
         </div>
        
         <div id="left" className="column">
-            <img className="logo" src="./Images/Images/HTML5.jpg" alt="html logo" />
+            {/* <img className="logo" src="./Images/Images/HTML5.jpg" alt="html logo" />
             <img  className="logo" src="./Images/Images/CSS3.jpg" alt="css5 logo" />
-            <img className="logo" src="./Images/Images/JS5.jpg" alt="JavaScript logo" />
+            <img className="logo" src="./Images/Images/JS5.jpg" alt="JavaScript logo" /> */}
         </div>
         
         {/* <!-- EYES --> */}
-        <div id="video" className="eyes">
-                <div className="eye">
-                    <div className="ball"></div>
-                </div>
-                <div className="eye">
-                    <div className="ball"></div>
-                </div>
+        <div id="center" className="eyes">
+
         </div> 
           
         <div id="video">
@@ -33,10 +28,10 @@ export default function Grail() {
         </div>       
 
         <div id="right" className="column">
-            <img className="logo" src="./Images/Images/Mongo.jpg" alt="html logo" />
+            {/* <img className="logo" src="./Images/Images/Mongo.jpg" alt="html logo" />
             <img className="logo" src="./Images/Images/Express.jpg" alt="JavaScript logo" /> 
             <img  className="logo" src="./Images/Images/React.jpg" alt="css5 logo" />
-            <img className="logo" src="./Images/Images/Node.jpg" alt="JavaScript logo" />
+            <img className="logo" src="./Images/Images/Node.jpg" alt="JavaScript logo" /> */}
         </div>
 
         <div id="footer">
