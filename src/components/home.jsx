@@ -64,10 +64,10 @@ export default function Grail() {
                                  height: '100%', 
                                  objectFit: 'cover', 
                                  backgroundColor: '#f8f8f8',
-                                 backgroundImage: `url(${BOT_Logo}`,
+                                //  backgroundImage: `url(${BOT_Logo}`,
                                  backgroundSize: '20%',
                                 // height: '120vh',
-                                // borderRadius: '0rem' 
+                                borderRadius: '1rem' 
                             }} 
                          onPlay={e => console.log("Listening to Rawk n Roll")}
                          />
