@@ -42,6 +42,7 @@ export default function Grail() {
         </div>
 
         <div id="bottomLeft" className="box">
+            <a href='guan'>In all tonight's dreams believe</a>
         </div>
 
         <div id="midLeftB" className="box">
@@ -54,16 +55,15 @@ export default function Grail() {
 
         
         {/* <!-- Center --> */}
-        <div id="center" className="column">
+        <div id="center">
             <AudioPlayer src={LookLeft} 
-                         autoplay 
+                         autoplay
                          style={{width: '100%', 
                                  height: '100%', 
                                  objectFit: 'cover', 
                                  backgroundColor: '#f8f8f8',
-                                borderRadius: '1rem' }} 
+                                 borderRadius: '1rem' }} 
                          onPlay={e => console.log("Listening to Rawk n Roll")}
-                         heading='BOYS'
                          />
         </div>      
 
