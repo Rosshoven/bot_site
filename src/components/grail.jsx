@@ -1,4 +1,5 @@
 import '../grail.css';
+import Pic_4 from '../images/Pic_4.jpeg'
 
 export default function Grail() {
 
@@ -12,14 +13,18 @@ export default function Grail() {
         <div id="topLeft" className="box">
         </div>
 
-        <div id="header" className="">
-            <h1>Boys On Trial</h1>
+        <div id="header" className="box">
+            <img style={{width: '100%', height: '100%', objectFit: 'cover' }} src={Pic_4} alt="Pic of Band downtown Chicago" />
+            {/* <h1>Boys On Trial</h1> */}
+            <div style={{ position: 'fixed', top: '20%', left: '35.5%', transform: 'translate(-50%, -50%)', textAlign: 'left', color: 'black'}}>
+            <h1 style={{fontSize: '1rem'}}>Boys On Trial</h1>
+  </div>
         </div>
        
         <div id="topRight" className="box">
         </div>
 
-        <div id="midRightA" className="box">
+        <div id="midRightA" className="box">        
         </div>
 
         <div id="midRightB" className="box">
