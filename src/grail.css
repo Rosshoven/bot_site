@@ -1,7 +1,7 @@
 .wrapper {
     width: 100%;
     height: 90vh;
-    padding: 5%;
+    padding: 3% 5% 0;
     position: static;
     display: grid;
     grid-template-columns: repeat(4, 1fr) ;
@@ -9,8 +9,7 @@
     gap: .4%;
     text-align: center;
     background-color: #000000;
-    margin: 4rem auto;
-
+    margin: 4rem auto 0 auto;
  }
  
  .wrapper h1 {
@@ -20,8 +19,7 @@
 #topLeft {
     grid-area: 1 / 1 / 2 / 2;
     font-size: 2em;
-    border-top-left-radius: 0%;
-    border-bottom-left-radius: 0%;
+    border-top-left-radius: 1rem;
  }
 
  #header {
@@ -40,8 +38,7 @@
  #topRight {
     grid-area: 1 / 4 / 2 / 5;
     font-size: 2em;
-    border-top-left-radius: 0%;
-    border-bottom-left-radius: 0%;
+    border-top-right-radius: 1rem;
  }
  
 #midRightA {
@@ -61,8 +58,7 @@
  #bottomRight {
     grid-area: 4 / 4 / 5 / 5;
     font-size: 2em;
-    border-top-left-radius: 0%;
-    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 1rem;
  }
 
  #bottomRightA {
@@ -136,42 +132,17 @@
  }
  
  #footer {
-    background-color: #0900ac;;
-    font-size: 2em;
+    background-color: black;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 5%;
+    flex-direction: row;
+    justify-content: flex-start;
+    color: white;
+    padding-top: .5rem;
+ }
+
+ #footer p {
+    font-size: .7rem;
+    padding: .2rem 1rem 0;
+    color: #d48c
  }
  
- /* #footer p {
-   padding-left: 4%;
-   padding-right: 4%;
-   width: 100%;
-   color: cornsilk;
-   font-size: .9rem;
- } */
- 
- /* div p a {
-   font-size: 1.5rem;
-   color: rgb(0, 98, 255);
-   
- } */
-
-
-
-  /* .logo {
-   width: 45%;
-   background-color: white;
-   padding: 5%;
-   margin-top: 4%;
-   margin-bottom: 4%;
-   border: solid 2px #0900ac;
- } */
-
-  /* #right {
-   grid-area: 1 / 3 / 5 / 4;
-    font-size: 2em;
-    border-top-right-radius: 0%;
-    border-bottom-right-radius: 0%;
- } */
