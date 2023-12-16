@@ -15,7 +15,7 @@ export default function Player() {
 
   return(  
 <>
-    <Album image={IITLTWD} />
+    {/* <Album image={IITLTWD} /> */}
     <AudioPlayer
     // autoPlay
     src={Rex}

@@ -26,7 +26,7 @@
  #header {
     grid-area: 1 / 2 / 2 / 4;
     border: solid 1px silver;
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
     overflow: auto;
     font-family: 'Cinzel', serif;
  }
