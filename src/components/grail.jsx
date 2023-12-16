@@ -65,7 +65,7 @@ export default function Grail() {
                                  objectFit: 'cover', 
                                  backgroundColor: '#f8f8f8',
                                  backgroundImage: `url(${BOT_Logo}`,
-                                 backgroundSize: '20%',
+                                 backgroundSize: '100%',
                                 // height: '120vh',
                                 // borderRadius: '0rem' 
                             }} 

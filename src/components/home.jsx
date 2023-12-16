@@ -20,7 +20,7 @@ export default function Grail() {
         <div id="header" className="box">
             <img style={{width: '100%', height: '100%', objectFit: 'cover' }} src={Pic_4} alt="Pic of Band downtown Chicago" />
             {/* <h1>Boys On Trial</h1> */}
-            <div style={{ position: 'absolute', top: '20%', left: '35.5%', transform: 'translate(-50%, -90%)', textAlign: 'left', color: 'black'}}>
+            <div style={{ position: 'absolute', top: '15%', left: '35.5%', transform: 'translate(-50%, -90%)', textAlign: 'left', color: 'black'}}>
             <h1 style={{fontSize: '1rem'}}>Boys On Trial</h1>
   </div>
         </div>
@@ -48,6 +48,21 @@ export default function Grail() {
         </div>
 
         <div id="midLeftB" className="box">
+        <AudioPlayer src={LookLeft} 
+                         autoplay
+                         style={{width: '90%',
+                                 height: '90%', 
+                                 objectFit:'cover', 
+                                 backgroundColor: 'silver',
+                                 borderRadius: '1rem',
+                                 display: 'flex',
+                                // margin: '0',
+                                overflow: 'auto',
+                                alignItems: 'center',
+                                margin: '0 1rem'
+                            }} 
+                         onPlay={e => console.log("Listening to Rawk n Roll")}
+                         />
         </div>
 
         <div id="midLeftA" className="box">
@@ -57,8 +72,13 @@ export default function Grail() {
 
         
         {/* <!-- Center --> */}
-        <div id="center">
-            <AudioPlayer src={LookLeft} 
+        {/* <div id="center"> */}
+             <img id="center" src={BOT_Logo} 
+                 style={{ width: '100%'
+                 }} 
+                 alt="Boys On Trial Logo" 
+                 />
+            {/* <AudioPlayer src={LookLeft} 
                          autoplay
                          style={{width: '100%', 
                                  height: '100%', 
@@ -70,8 +90,8 @@ export default function Grail() {
                                 borderRadius: '1rem' 
                             }} 
                          onPlay={e => console.log("Listening to Rawk n Roll")}
-                         />
-        </div>      
+                         /> */}
+        {/* </div>       */}
 
     </div>
     
