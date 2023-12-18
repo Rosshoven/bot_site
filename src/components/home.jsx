@@ -7,6 +7,20 @@ import BOT_Logo from '../images/BOT_Logo.png';
 
 export default function Grail() {
 
+    const inputStyle = {
+                        width: '90%',
+                        // height: '100%', 
+                        // objectFit:'cover', 
+                        backgroundColor: 'pink',
+                        borderRadius: '.5rem',
+                        // display: 'flex',
+                        // margin: '0',
+                        overflow: 'auto',                           
+                        alignItems: 'center',
+                        margin: '2%',
+                        padding: '0',
+                        autocomplete: 'off'
+    }
 
     return (
 <>
@@ -29,15 +43,14 @@ export default function Grail() {
         </div>
 
         <div id="midRightA" className="box">     
-        <button type="button" class="btn btn-outline-dark">Login</button> 
+        <button style={{marginTop: '2%'}} type="button" class="btn btn-outline-dark">Login</button> 
              {/* <label htmlFor="userName">Username</label> */}
                         <input
-                            style={{ 
-                                // marginBottom: '7%' 
-                            }}
+                            style={inputStyle}
                             id="userName"
                             type="userName"
                             placeholder="Enter Username"
+                            // autocomplete="off"
                             // value={values.email}
                             // onChange={handleChange}
                             // onBlur={handleBlur}
@@ -47,12 +60,12 @@ export default function Grail() {
 
                         {/* <label htmlFor="password">Password</label> */}
                         <input
-                            style={{ 
-                                // marginBottom: '7%'
-                             }}
+                            style={inputStyle}
                             id="password"
                             type="password"
                             placeholder="Enter password"
+                            autocomplete="off"
+                            text="Enter Password"
                             // value={values.password}
                             // onChange={handleChange}
                             // onBlur={handleBlur}
