@@ -21,17 +21,48 @@ export default function Grail() {
             <img style={{width: '100%', height: '100%', objectFit: 'cover' }} src={Pic_4} alt="Pic of Band downtown Chicago" />
             {/* <h1>Boys On Trial</h1> */}
             <div style={{ position: 'absolute', top: '15%', left: '35.5%', transform: 'translate(-50%, -90%)', textAlign: 'left', color: 'black'}}>
-            <h1 style={{fontSize: '1rem'}}>Boys On Trial</h1>
+            {/* <h1 style={{fontSize: '1rem'}}>Boys On Trial</h1> */}
   </div>
         </div>
        
         <div id="topRight" className="box">
         </div>
 
-        <div id="midRightA" className="box">        
+        <div id="midRightA" className="box">     
+        <button type="button" class="btn btn-outline-dark">Login</button> 
+             {/* <label htmlFor="userName">Username</label> */}
+                        <input
+                            style={{ 
+                                // marginBottom: '7%' 
+                            }}
+                            id="userName"
+                            type="userName"
+                            placeholder="Enter Username"
+                            // value={values.email}
+                            // onChange={handleChange}
+                            // onBlur={handleBlur}
+                            // className={errors.email && touched.email ? "input-error form-control" : "form-control"} 
+                            />
+                        {/* {errors.email && touched.email && <p className="error">{errors.email}</p>} */}
+
+                        {/* <label htmlFor="password">Password</label> */}
+                        <input
+                            style={{ 
+                                // marginBottom: '7%'
+                             }}
+                            id="password"
+                            type="password"
+                            placeholder="Enter password"
+                            // value={values.password}
+                            // onChange={handleChange}
+                            // onBlur={handleBlur}
+                            // className={errors.password && touched.password ? "input-error form-control" : "form-control"} 
+                            />
+                        {/* {errors.password && touched.password && <p className="error">{errors.password}</p>} */}
         </div>
 
         <div id="midRightB" className="box">
+            <button type="button" class="btn btn-outline-dark">Create Account</button> 
         </div>
 
         <div id="bottomRight" className="box">
@@ -48,18 +79,20 @@ export default function Grail() {
         </div>
 
         <div id="midLeftB" className="box">
+           <h6 style={{margin: '1% auto', color: 'white'}}> Look Left</h6>
         <AudioPlayer src={LookLeft} 
                          autoplay
                          style={{width: '90%',
                                  height: '90%', 
                                  objectFit:'cover', 
-                                 backgroundColor: 'silver',
+                                 backgroundColor: 'white',
                                  borderRadius: '1rem',
                                  display: 'flex',
                                 // margin: '0',
                                 overflow: 'auto',
                                 alignItems: 'center',
-                                margin: '0 1rem'
+                                margin: '1rem 0rem',
+                                padding: '0'
                             }} 
                          onPlay={e => console.log("Listening to Rawk n Roll")}
                          />
@@ -74,7 +107,11 @@ export default function Grail() {
         {/* <!-- Center --> */}
         {/* <div id="center"> */}
              <img id="center" src={BOT_Logo} 
-                 style={{ width: '100%'
+                 style={{ 
+                    width: '100%',
+                    height: '100%',
+                    // position: 'absolute', 
+                //  objectFit: 'cover'
                  }} 
                  alt="Boys On Trial Logo" 
                  />
