@@ -1,25 +1,23 @@
 import '../grail.css';
-import Pic_4 from '../images/Pic_4.jpeg'
-import LookLeft from '../tracks/LookLeft.mp3'
+import Pic_4 from '../images/Pic_4.jpeg';
+import LookLeft from '../tracks/LookLeft.mp3';
 import AudioPlayer from 'react-h5-audio-player';
 import BOT_Logo from '../images/BOT_Logo.png';
+import Rex from '../tracks/Rex.mp3';
 
 
 export default function Grail() {
 
     const inputStyle = {
                         width: '90%',
-                        // height: '100%', 
-                        // objectFit:'cover', 
                         backgroundColor: 'pink',
                         borderRadius: '.5rem',
-                        // display: 'flex',
-                        // margin: '0',
                         overflow: 'auto',                           
                         alignItems: 'center',
-                        margin: '2%',
+                        margin: '4%',
                         padding: '0',
-                        autocomplete: 'off'
+                        autocomplete: 'off',
+                        border: '1px solid black'
     }
 
     return (
@@ -42,14 +40,14 @@ export default function Grail() {
         <div id="topRight" className="box">
         </div>
 
-        <div id="midRightA" className="box">     
+    <form id="midRightA" className="box">     
         <button style={{marginTop: '2%'}} type="button" class="btn btn-outline-dark">Login</button> 
              {/* <label htmlFor="userName">Username</label> */}
                         <input
                             style={inputStyle}
                             id="userName"
                             type="userName"
-                            placeholder="Enter Username"
+                            placeholder="Username"
                             // autocomplete="off"
                             // value={values.email}
                             // onChange={handleChange}
@@ -63,19 +61,20 @@ export default function Grail() {
                             style={inputStyle}
                             id="password"
                             type="password"
-                            placeholder="Enter password"
+                            placeholder="Password"
                             autocomplete="off"
-                            text="Enter Password"
+                            // text="Enter Password"
+                            name="password" 
                             // value={values.password}
                             // onChange={handleChange}
                             // onBlur={handleBlur}
                             // className={errors.password && touched.password ? "input-error form-control" : "form-control"} 
                             />
                         {/* {errors.password && touched.password && <p className="error">{errors.password}</p>} */}
-        </div>
+    </form>
 
         <div id="midRightB" className="box">
-            <button type="button" class="btn btn-outline-dark">Create Account</button> 
+            <button style={{margin: '4%'}} type="button" class="btn btn-outline-dark">Create Account</button> 
         </div>
 
         <div id="bottomRight" className="box">
@@ -92,8 +91,8 @@ export default function Grail() {
         </div>
 
         <div id="midLeftB" className="box">
-           <h6 style={{margin: '1% auto', color: 'white'}}> Look Left</h6>
-        <AudioPlayer src={LookLeft} 
+           <h6 style={{margin: '1% auto', color: 'white'}}>Rex</h6>
+        <AudioPlayer src={Rex} 
                          autoplay
                          style={{width: '90%',
                                  height: '90%', 
@@ -123,6 +122,7 @@ export default function Grail() {
                  style={{ 
                     width: '100%',
                     height: '100%',
+                    // border: '1px solid #d48c'
                     // position: 'absolute', 
                 //  objectFit: 'cover'
                  }} 
@@ -148,8 +148,8 @@ export default function Grail() {
     {/* Footer */}
     <div id="footer">
            <p>All Songs ©BOT</p>  
-           <p>Photos by Johanna</p>  
-           <p>Logo by Blake</p>
+           <p>Photos by Johanna Claudette</p>  
+           <p>Logo by Blake Calovic</p>
     </div>
 
 
