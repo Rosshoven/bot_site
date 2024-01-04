@@ -30,7 +30,7 @@
     border-top: solid .1px #d48c;
     /* border-bottom: solid .1px #d48c; */
     overflow: auto;
-    font-family: 'Cinzel', serif;
+    /* font-family: 'Cinzel', serif; */
  }
 
  #header p {
@@ -49,7 +49,7 @@
  
 #midRightA {
     grid-area: 2 / 4 / 3 / 5;
-    font-size: 2em;
+    font-size: .7em;
  }
 
  #midRightB {
@@ -67,16 +67,13 @@
  #bottomRightA {
     grid-area: 4 / 3 / 5 / 4;
     font-size: 2em;
-    border-top-left-radius: 0%;
-    border-bottom-left-radius: 0%;
     border-bottom: solid .1px #d48c;
  }
 
  #bottomLeftA {
     grid-area: 4 / 2 / 5 / 3;
     font-size: 2em;
-    border-top-left-radius: 0%;
-    border-bottom-left-radius: 0%;
+    border-bottom: solid .1px #d48c;
  }
 
  #bottomLeft {
@@ -93,9 +90,7 @@
 
  #midLeftA {
     grid-area: 2 / 1 / 3 / 2;
-    font-size: 2em;
-    border-top-left-radius: 0%;
-    border-bottom-left-radius: 0%;
+    font-size: .7em;
  }
 
  .box {

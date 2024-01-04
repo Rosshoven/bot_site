@@ -6,7 +6,7 @@ import BOT_Logo from '../images/BOT_Logo.png';
 import Rex from '../tracks/Rex.mp3';
 import BOT_Gun from '../images/BOT_Gun.png';
 import Dog_Motorcycle from '../images/Dog_Motorcycle.png';
-
+import Walking from '../images/Walking.jpg';
 
 export default function Grail() {
 
@@ -20,6 +20,18 @@ export default function Grail() {
                         padding: '0',
                         autocomplete: 'off',
                         border: '1px solid black'
+    }
+
+    const audioStyle = {
+          width: '90%',
+          height: '90%', 
+          backgroundColor: 'white',
+          borderRadius: '1rem',
+          overflow: 'auto',
+          alignItems: 'center',
+          marginBottom: '5%',
+          padding: '0',
+          border: '.2rem solid black'
     }
 
     return (
@@ -51,7 +63,55 @@ export default function Grail() {
               }} />
         </div>
 
-    <form id="midRightA" className="box">     
+        <div id="midRightA" className="box">
+            <button style={{margin: '4%'}} type="button" class="btn btn-outline-dark">Create Account</button> 
+        </div>
+
+        <div id="midRightB" className="box">
+        <h6 style={{marginTop: '5%', color: 'white'}}>Rex</h6>
+        <AudioPlayer src={Rex} 
+                        //  autoplay
+                         style={audioStyle} 
+                         onPlay={e => console.log("Listening to Rawk n Roll")}
+                         />        </div>
+
+        <div id="bottomRight" className="box">
+            <a href='if'>You are safe today</a>
+        </div>
+
+        <div id="bottomRightA" className="box">
+            <img src={Dog_Motorcycle} alt="Man riding motorcycle with his Dog"
+            style={{ 
+                width: '100%',
+                height: '100%',
+                transform: 'scaleX(-1)' //FLIPS IMAGE HORIZONTALLY
+             }}  
+             />
+        </div>
+
+        <div id="bottomLeftA" className="box">
+            <img src={Dog_Motorcycle} alt="Man riding motorcycle with his Dog"
+                style={{ 
+                    width: '100%',
+                    height: '100%',
+                }}  
+                />
+        </div>
+
+        <div id="bottomLeft" className="box">
+            <a href='guan'>In all tonight's dreams believe</a>
+        </div>
+
+        <div id="midLeftB" className="box">
+           <h6 style={{marginTop: '5%', color: 'white'}}>Look Left</h6>
+        <AudioPlayer src={LookLeft} 
+                        //  autoplay
+                         style={audioStyle} 
+                         onPlay={e => console.log("Listening to Rawk n Roll")}
+                         />
+        </div>
+
+        <form id="midLeftA" className="box">     
         <button style={{marginTop: '2%'}} type="button" class="btn btn-outline-dark">Login</button> 
              {/* <label htmlFor="userName">Username</label> */}
                         <input
@@ -82,66 +142,19 @@ export default function Grail() {
                             // className={errors.password && touched.password ? "input-error form-control" : "form-control"} 
                             />
                         {/* {errors.password && touched.password && <p className="error">{errors.password}</p>} */}
-    </form>
-
-        <div id="midRightB" className="box">
-            <button style={{margin: '4%'}} type="button" class="btn btn-outline-dark">Create Account</button> 
-        </div>
-
-        <div id="bottomRight" className="box">
-            <a href='if'>You are safe today</a>
-        </div>
-
-        <div id="bottomRightA" className="box">
-            <img src={Dog_Motorcycle} alt="Man riding motorcycle with his Dog"
-            style={{ 
-                width: '100%',
-                height: '100%',
-                // transform: 'scaleX(-1)' //FLIPS IMAGE HORIZONTALLY
-             }}  />
-        </div>
-
-        <div id="bottomLeftA" className="box">
-        </div>
-
-        <div id="bottomLeft" className="box">
-            <a href='guan'>In all tonight's dreams believe</a>
-        </div>
-
-        <div id="midLeftB" className="box">
-           <h6 style={{margin: '1% auto', color: 'white'}}>Rex</h6>
-        <AudioPlayer src={Rex} 
-                         autoplay
-                         style={{width: '90%',
-                                 height: '90%', 
-                                 objectFit:'cover', 
-                                 backgroundColor: 'white',
-                                 borderRadius: '1rem',
-                                 display: 'flex',
-                                // margin: '0',
-                                overflow: 'auto',
-                                alignItems: 'center',
-                                margin: '1rem 0rem',
-                                padding: '0'
-                            }} 
-                         onPlay={e => console.log("Listening to Rawk n Roll")}
-                         />
-        </div>
-
-        <div id="midLeftA" className="box">
-        </div>
-        
+    </form>        
 
 
         
-        {/* <!-- Center --> */}
-        {/* <div id="center"> */}
-             <img id="center" src={BOT_Logo} 
+{/* <!-- Center --> */}
+
+             <img id="center" 
+                 src={BOT_Logo} 
                  style={{ 
-                    width: '100%',
+                    width: '100%',  
                     height: '100%'
-                 }} 
-                 alt="Boys On Trial Logo" 
+                    }} 
+                    alt="Boys On Trial Logo" 
                  />
             {/* <AudioPlayer src={LookLeft} 
                          autoplay
