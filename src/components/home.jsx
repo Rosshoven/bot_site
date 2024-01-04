@@ -89,7 +89,7 @@ export default function Grail() {
         </div>
 
         <div id="bottomRight" className="box">
-        
+            <a href='if'>You are safe today</a>
         </div>
 
         <div id="bottomRightA" className="box">
