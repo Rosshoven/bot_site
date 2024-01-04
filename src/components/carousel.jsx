@@ -53,10 +53,17 @@ const PhotoCarousel = ({ images, interval = 3000 }) => {
     return (
       <div className="photo-carousel" style={centering}>
         <h1 style={{marginTop: '5.4rem', backgroundColor: 'black', color: 'pink', padding: '1rem', borderRadius: '1rem'}}>Boys Photo Carousel</h1>
-        <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', flexWrap: 'wrap'}}>
+        <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', flexWrap: 'wrap', flexShrink: '1'}}>
             <button className='btn btn-outline-dark' onClick={prevImage} style={buttonStyle}>Previous</button>
-            <img src={images[currentIndex]} alt={`${currentIndex + 1}`} style={{ width: '450px', height: '', border: '12px solid black', borderRadius: '1rem'}} onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}/>
+            <img src={images[currentIndex]} alt={`${currentIndex + 1}`} 
+                style={{ 
+                  maxWidth: '80em', 
+                  maxHeight: '450px', 
+                  border: '12px solid black', 
+                  borderRadius: '1rem'}} 
+                  onMouseEnter={handleMouseEnter}
+                  onMouseLeave={handleMouseLeave}
+                  />
             <button type='button' className='btn btn-outline-dark' onClick={nextImage}style={buttonStyle}>Next</button>
         </div>
       </div>

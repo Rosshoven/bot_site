@@ -20,12 +20,15 @@
     grid-area: 1 / 1 / 2 / 2;
     font-size: 2em;
     border-top-left-radius: 1rem;
+    background-color: black;
+    border-top: .1px solid #d48c;
+    border-left: .1px solid #d48c;
  }
 
  #header {
     grid-area: 1 / 2 / 2 / 4;
-    border: solid 1px silver;
-    /* background-color: antiquewhite; */
+    border-top: solid .1px #d48c;
+    /* border-bottom: solid .1px #d48c; */
     overflow: auto;
     font-family: 'Cinzel', serif;
  }
@@ -39,6 +42,9 @@
     grid-area: 1 / 4 / 2 / 5;
     font-size: 2em;
     border-top-right-radius: 1rem;
+    background-color: black;
+    border-top: .1px solid #d48c;
+    border-right: .1px solid #d48c;
  }
  
 #midRightA {
@@ -59,6 +65,7 @@
     grid-area: 4 / 4 / 5 / 5;
     font-size: 2em;
     border-bottom-right-radius: 1rem;
+    
  }
 
  #bottomRightA {

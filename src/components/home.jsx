@@ -4,6 +4,7 @@ import LookLeft from '../tracks/LookLeft.mp3';
 import AudioPlayer from 'react-h5-audio-player';
 import BOT_Logo from '../images/BOT_Logo.png';
 import Rex from '../tracks/Rex.mp3';
+import BOT_Gun from '../images/BOT_Gun.png'
 
 
 export default function Grail() {
@@ -27,6 +28,11 @@ export default function Grail() {
         {/* Grail in clockwise order from topLeft */}
         
         <div id="topLeft" className="box">
+        <img src={BOT_Gun} alt="Boys On Trial T-Shirt Logo" 
+              style={{
+                maxHeight: '100%'
+              }} 
+              />
         </div>
 
         <div id="header" className="box">
@@ -38,6 +44,10 @@ export default function Grail() {
         </div>
        
         <div id="topRight" className="box">
+        <img src={BOT_Gun} alt="Boys On Trial T-Shirt Logo" 
+              style={{
+                maxHeight: '100%'
+              }} />
         </div>
 
     <form id="midRightA" className="box">     
@@ -78,9 +88,11 @@ export default function Grail() {
         </div>
 
         <div id="bottomRight" className="box">
+        
         </div>
 
         <div id="bottomRightA" className="box">
+            
         </div>
 
         <div id="bottomLeftA" className="box">
