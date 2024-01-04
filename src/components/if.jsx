@@ -38,6 +38,10 @@ export default function If() {
                backgroundColor={'silver'}
                border={'green 2px solid'}
                />
+               <p style={{color: 'pink', display: 'flex', justifyContent: 'right', marginLeft: '70%'}} 
+               onMouseEnter={(e) => e.target.style.color = 'white'}
+               onMouseLeave={(e) => e.target.style.color = 'pink'}
+               >...it was</p>
     </div>           
       
 )
