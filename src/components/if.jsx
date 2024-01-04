@@ -12,7 +12,7 @@ export default function If() {
 
     return(
 
-    <div style={{backgroundColor: 'pink', padding: '3rem'}}>
+    <div style={{backgroundColor: 'pink', padding: '.1rem'}}>
         <Album image={IF} 
                description={`If it's the last thing we do Album Cover`} 
                albumTitle={`If it's the last thing we do...`}
@@ -38,8 +38,8 @@ export default function If() {
                backgroundColor={'silver'}
                border={'green 2px solid'}
                />
-               <p style={{color: 'pink', display: 'flex', justifyContent: 'right', marginLeft: '70%'}} 
-               onMouseEnter={(e) => e.target.style.color = 'white'}
+               <p style={{fontSize: '2rem', color: 'pink', display: 'flex', justifyContent: 'right', alignContent: 'top', marginLeft: '65%', marginRight: '5%'}} 
+               onMouseEnter={(e) => e.target.style.color = 'red'}
                onMouseLeave={(e) => e.target.style.color = 'pink'}
                >...it was</p>
     </div>           
