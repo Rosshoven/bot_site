@@ -4,7 +4,8 @@ import LookLeft from '../tracks/LookLeft.mp3';
 import AudioPlayer from 'react-h5-audio-player';
 import BOT_Logo from '../images/BOT_Logo.png';
 import Rex from '../tracks/Rex.mp3';
-import BOT_Gun from '../images/BOT_Gun.png'
+import BOT_Gun from '../images/BOT_Gun.png';
+import Dog_Motorcycle from '../images/Dog_Motorcycle.png';
 
 
 export default function Grail() {
@@ -92,7 +93,12 @@ export default function Grail() {
         </div>
 
         <div id="bottomRightA" className="box">
-            
+            <img src={Dog_Motorcycle} alt="Man riding motorcycle with his Dog"
+            style={{ 
+                width: '100%',
+                height: '100%',
+                // transform: 'scaleX(-1)' //FLIPS IMAGE HORIZONTALLY
+             }}  />
         </div>
 
         <div id="bottomLeftA" className="box">
@@ -133,10 +139,7 @@ export default function Grail() {
              <img id="center" src={BOT_Logo} 
                  style={{ 
                     width: '100%',
-                    height: '100%',
-                    // border: '1px solid #d48c'
-                    // position: 'absolute', 
-                //  objectFit: 'cover'
+                    height: '100%'
                  }} 
                  alt="Boys On Trial Logo" 
                  />
@@ -161,7 +164,7 @@ export default function Grail() {
     <div id="footer">
            <p>All Songs ©BOT</p>  
            <p>Photos by Johanna Claudette</p>  
-           <p>Logo by Blake Calovic</p>
+           <p>Logos by Blake Calovic</p>
     </div>
 
 

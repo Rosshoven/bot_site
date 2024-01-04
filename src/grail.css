@@ -6,7 +6,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr) ;
     grid-template-rows: repeat(4, 1fr);
-    gap: .4%;
+    gap: .3%;  
     text-align: center;
     background-color: #000000;
     margin: 4rem auto 0 auto;
@@ -50,15 +50,11 @@
 #midRightA {
     grid-area: 2 / 4 / 3 / 5;
     font-size: 2em;
-    border-top-left-radius: 0%;
-    border-bottom-left-radius: 0%;
  }
 
  #midRightB {
     grid-area: 3 / 4 / 4 / 5;
     font-size: 2em;
-    border-top-left-radius: 0%;
-    border-bottom-left-radius: 0%;
  }
 
  #bottomRight {
@@ -73,6 +69,7 @@
     font-size: 2em;
     border-top-left-radius: 0%;
     border-bottom-left-radius: 0%;
+    border-bottom: solid .1px #d48c;
  }
 
  #bottomLeftA {
@@ -84,9 +81,7 @@
 
  #bottomLeft {
     grid-area: 4 / 1 / 5 / 2;
-    border-top-left-radius: 0%;
     border-bottom-left-radius: 1rem;
-    background-color: '#f8f8f8';
  }
  
  #midLeftB {
@@ -135,9 +130,10 @@
 
  #center {
     grid-area: 2 / 2 / 4 / 4;
-    background-color:  #d48c;
-    width: '100%';
-    height: '100vh';
+    /* border: solid .1px #d48c; */
+    /* width: '100%';
+    height: '100vh'; */
+    max-height: 100%;
  }
  
  #footer {
