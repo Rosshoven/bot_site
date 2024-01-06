@@ -17,7 +17,7 @@ const buttonStyle = {
     margin: '.5rem'
 }
 
-const PhotoCarousel = ({ images, interval = 3000 }) => {
+const PhotoCarousel = ({ title, images, interval = 3000 }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [isPaused, setIsPaused] = useState(false)
   
@@ -52,9 +52,28 @@ const PhotoCarousel = ({ images, interval = 3000 }) => {
 
     return (
       <div className="photo-carousel" style={centering}>
-        <h1 style={{marginTop: '5.4rem', backgroundColor: 'black', color: 'pink', padding: '1rem', borderRadius: '1rem'}}>Boys Photo Carousel</h1>
+
+        <h1 style={{
+            marginTop: '3rem', 
+            backgroundColor: 'black', 
+            color: 'pink', 
+            padding: '1rem', 
+            borderRadius: '1rem', 
+            // alignItems: 'center'
+            }}>{title}</h1>
+
+        <h6 style={{
+            marginTop: '0', 
+            backgroundColor: 'black', 
+            color: 'pink', 
+            padding: '.3rem', 
+            borderRadius: '1rem', 
+            fontSize: '.5rem'
+            // alignItems: 'center'
+            }}>Scroll over pic to pause carousel</h6>    
+
         <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', flexWrap: 'wrap', flexShrink: '1'}}>
-            <button className='btn btn-outline-dark' onClick={prevImage} style={buttonStyle}>Previous</button>
+            <button className='btn btn-outline-dark' onClick={prevImage} style={buttonStyle}>Prev</button>
             <img src={images[currentIndex]} alt={`${currentIndex + 1}`} 
                 style={{ 
                   maxWidth: '80em', 

@@ -37,7 +37,8 @@ export default function Pics() {
 
       return (
         <div className="app" style={Background}>
-          <PhotoCarousel images={images}/>
+          <PhotoCarousel images={images}
+            title={'Boys On Trial'}/>
         </div>
       );
 };

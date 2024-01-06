@@ -21,13 +21,13 @@
     font-size: 2em;
     border-top-left-radius: 1rem;
     background-color: black;
-    border-top: .1px solid #d48c;
-    border-left: .1px solid #d48c;
+    /* border-top: .1px solid #d48c;
+    border-left: .1px solid #d48c; */
  }
 
  #header {
     grid-area: 1 / 2 / 2 / 4;
-    border-top: solid .1px #d48c;
+    /* border-top: solid .1px #d48c; */
     /* border-bottom: solid .1px #d48c; */
     overflow: auto;
     /* font-family: 'Cinzel', serif; */
@@ -43,8 +43,8 @@
     font-size: 2em;
     border-top-right-radius: 1rem;
     background-color: black;
-    border-top: .1px solid #d48c;
-    border-right: .1px solid #d48c;
+    /* border-top: .1px solid #d48c;
+    border-right: .1px solid #d48c; */
  }
  
 #midRightA {
