@@ -8,6 +8,7 @@ import BOT_Gun from '../images/BOT_Gun.png';
 import Dog_Motorcycle from '../images/Dog_Motorcycle.png';
 // import Walking from '../images/Walking.jpg';
 import CreateAccount from './create-account';
+import Login from './login';
 
 export default function Grail() {
 
@@ -66,7 +67,6 @@ export default function Grail() {
 
         <div id="midRightA" className="box">
             <CreateAccount />
-            {/* <button style={{margin: '4%'}} type="button" className="btn btn-outline-dark">Create Account</button>  */}
         </div>
 
         <div id="midRightB" className="box">
@@ -113,36 +113,9 @@ export default function Grail() {
                          />
         </div>
 
-        <form id="midLeftA" className="box">     
-        <button style={{marginTop: '2%'}} type="button" class="btn btn-outline-dark">Login</button> 
-             {/* <label htmlFor="userName">Username</label> */}
-                        <input
-                            style={inputStyle}
-                            id="userName"
-                            type="userName"
-                            placeholder="Username"
-                            // value={values.email}
-                            // onChange={handleChange}
-                            // onBlur={handleBlur}
-                            // className={errors.email && touched.email ? "input-error form-control" : "form-control"} 
-                            />
-                        {/* {errors.email && touched.email && <p className="error">{errors.email}</p>} */}
-
-                        {/* <label htmlFor="password">Password</label> */}
-                        <input
-                            style={inputStyle}
-                            id="password"
-                            type="password"
-                            placeholder="Password"
-                            // text="Enter Password"
-                            name="password" 
-                            // value={values.password}
-                            // onChange={handleChange}
-                            // onBlur={handleBlur}
-                            // className={errors.password && touched.password ? "input-error form-control" : "form-control"} 
-                            />
-                        {/* {errors.password && touched.password && <p className="error">{errors.password}</p>} */}
-    </form>        
+        <div id="midLeftA" className="box">     
+            <Login />
+        </div>        
 
 
         
