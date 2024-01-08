@@ -49,10 +49,3 @@ export default function If() {
       
 )
 }
-
-
-     {/* <AudioPlayer src={Rex} /> 
-    <AudioPlayer src={Fireplay} />  */}
-
-
-        

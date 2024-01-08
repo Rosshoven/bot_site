@@ -1,9 +1,9 @@
 import AudioPlayer from 'react-h5-audio-player';
 import 'react-h5-audio-player/lib/styles.css';
-import Album from './album';
-import IITLTWD from '../images/IITLTWD.jpg';
+// import Album from './album';
+// import IITLTWD from '../images/IITLTWD.jpg';
 import Rex from '../tracks/Rex.mp3';
-import Fireplay from '../tracks/Fireplay.mp3'
+// import Fireplay from '../tracks/Fireplay.mp3'
 // import 'react-h5-audio-player/lib/styles.less' Use LESS
 // import 'react-h5-audio-player/src/styles.scss' Use SASS
 

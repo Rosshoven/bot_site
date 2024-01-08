@@ -58,6 +58,10 @@ const router = createBrowserRouter([
       {
         path: 'schubas',
         element: <Schubas />
+      },
+      {
+        path: 'create-account',
+        element: <createAccount />
       }
 
     ]
