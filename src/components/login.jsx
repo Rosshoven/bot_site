@@ -20,8 +20,8 @@ export default function Login() {
         borderRadius: '.3rem',
         overflow: 'auto',                           
         alignItems: 'center',
-        margin: '0.5% 4%',
-        padding: '1.5% 2%',
+        margin: '1% 4%',
+        padding: '1% 2%',
         autocomplete: 'off',
         border: '1px solid black', 
 }

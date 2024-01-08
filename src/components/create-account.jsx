@@ -25,7 +25,7 @@ export default function CreateAccount() {
         overflow: 'auto',                           
         alignItems: 'center',
         margin: '0.5% 4%',
-        padding: '0% 2%',
+        padding: '1% 2%',
         autocomplete: 'off',
         border: '1px solid black', 
 }
