@@ -5,7 +5,8 @@ import { useState } from "react";
 // importing the yup schema for formik validation
 import { createSchema } from '../schemas/create-schema';
 // importing the Account Context
-import { useAccountContext } from "./account-context.jsx";
+import { useAccountContext } from "./account-context";
+import '../grail.css';
 
 import { Link } from "react-router-dom";
 import '../index.css'; 
@@ -15,7 +16,19 @@ import '../index.css';
 export default function CreateAccount() {
     // defining the handleSetAccountData by destructring. Will be imperitive to use to update the accounts, coming from the Account Context so it will be saved.
     const { handleSetAccountData, setLoggedIn } = useAccountContext();
-    // const {balance, setBalance} = useBalanceContext();
+
+    const inputStyle = {
+        maxWidth: '70%',
+        
+        backgroundColor: 'lightgrey',
+        borderRadius: '.3rem',
+        overflow: 'auto',                           
+        alignItems: 'center',
+        margin: '0.5% 4%',
+        padding: '0% 2%',
+        autocomplete: 'off',
+        border: '1px solid black', 
+}
 
     // useState hook used to display text on the button: Create Another Account' OR 'Create Account'  
     const [createAccountTrue, setCreateAccountTrue] = useState(false);
@@ -34,7 +47,7 @@ export default function CreateAccount() {
         
         // Actual request to an endpoint on the server
         // Relative path - took out localhost 3000 so this fetch will work with any URL
-        const response = await fetch(`/account/create/${values.userName}/${values.email}/${values.password}`);
+        const response = await fetch(`/account/create/${values.userName}/${values.password}`);
         if (!response.ok) {
             return
         }
@@ -49,7 +62,6 @@ export default function CreateAccount() {
             value: {
                 // the type of `values` inferred to be Blog
                 userName: '',
-                email: '',
                 password: '',
                 confirmPassword: ''
         },
@@ -80,21 +92,38 @@ export default function CreateAccount() {
         // show initial state is true so the form starting below will be displayed
         show ? 
         
-        <div className='card form-control relative' style={{ borderSizing: 'border-box', backgroundColor: 'lightblue', position: 'static', padding: '3% 0% 30% 0%' }}>
+        <div className='card form-control relative' 
+        style={{ 
+            // borderSizing: 'border-box', 
+            backgroundColor: '#d48c', 
+            margin: '4rem auto 0 auto', 
+            padding: '3% 0% 30% 0%' }}
+            >
 
             <form onSubmit={handleSubmit} autoComplete="off">
 
                 <div className="card-body" id="accountCard" 
-                // style={{ borderRadius: '5px', width: '18rem', marginRight: 'auto', marginLeft: 'auto', marginTop: '10%', backgroundColor: '#a6a6a6',  border: '2px solid green' }}
                 >
-                    <h2 style={{ margin: '2% auto', padding: '2%', backgroundColor: 'pink', borderRadius: '20px', fontFamily: 'Forum, cursive', fontSize: '2.2rem', fontWeight: 'bold', display: 'flex', justifyContent: 'center' }}>Create Account</h2>
-                    <hr />
-                    {/* ADD IMAGE    <img src="..." class="card-img-top" alt="..." /> */}
-                    <div className="card-body">
+                    <button 
+                    className="btn btn-outline-dark"
+                    // disabled={ values.password.length === 0 && values.confirmPassword.length === 0 ? true : false } 
+                    type="submit" 
+                    style={{ 
+                        margin: '1% auto', 
+                        // padding: '2%', 
+                        // backgroundColor: 'black', 
+                        // color: 'black',
+                        borderRadius: '1rem', 
+                        fontFamily: 'Forum, cursive', 
+                        fontSize: '1rem', 
+                        // fontWeight: 'bold', 
+                        display: 'flex', 
+                        justifyContent: 'center' }}
+                        >{createAccountTrue ? 'Create Another Account': 'Create Account'}</button>
+                    {/* <hr /> */}
 
-                        <label htmlFor="userName">Username</label>
                         <input
-                            style={{ marginBottom: '7%' }}
+                            style={inputStyle}
                             id="userName"
                             type="text"
                             placeholder="Enter Username"
@@ -104,21 +133,8 @@ export default function CreateAccount() {
                             className={errors.userName && touched.userName ? "input-error form-control" : "form-control"} />
                         {errors.userName && touched.userName && <p className="error">{errors.userName}</p>}
 
-                        <label htmlFor="email">Email</label>
                         <input
-                            style={{ marginBottom: '7%' }}
-                            id="email"
-                            type="email"
-                            placeholder="Enter email"
-                            value={values.email}
-                            onChange={handleChange}
-                            onBlur={handleBlur}
-                            className={errors.email && touched.email ? "input-error form-control" : "form-control"} />
-                        {errors.email && touched.email && <p className="error">{errors.email}</p>}
-
-                        <label htmlFor="password">Password</label>
-                        <input
-                            style={{ marginBottom: '7%' }}
+                            style={inputStyle}
                             id="password"
                             type="password"
                             placeholder="Enter password"
@@ -128,9 +144,8 @@ export default function CreateAccount() {
                             className={errors.password && touched.password ? "input-error form-control" : "form-control"} />
                         {errors.password && touched.password && <p className="error">{errors.password}</p>}
 
-                        <label htmlFor="confirmPassword">Confirm Password</label>
                         <input
-                            style={{ marginBottom: '7%' }}
+                            style={inputStyle}
                             id="confirmPassword"
                             type="password"
                             placeholder="Confirm password"
@@ -140,17 +155,17 @@ export default function CreateAccount() {
                             className={errors.confirmPassword && touched.confirmPassword ? "input-error form-control" : "form-control"} />
                         {errors.confirmPassword && touched.confirmPassword && <p className="error">{errors.confirmPassword}</p>}
 
-                        <button 
+                        {/* <button 
                         style={{ marginTop: '5%' }} 
                         // button stays disabled if both password and confirm password have nothing in them. Once a letter is put into either, the button is no longer disabled
                         disabled={ values.password.length === 0 && values.confirmPassword.length === 0 ? true : false } 
                         type="submit" 
                         className="btn btn-success"
                         >{createAccountTrue ? 'Create Another Account': 'Create Account'}
-                        </button>
+                        </button> */}
 
                     </div>
-                </div>
+                {/* </div> */}
             </form> 
         </div>
         : (
@@ -164,8 +179,8 @@ export default function CreateAccount() {
                         // className="btn btn-success" 
                         // setter function setShow(true) for the onClick makes the create account form return to the page
                         // onClick={() => setShow(false)}
-                        to={'/deposit'}
-                        >Let's Bank</ Link>
+                        to={'/if'}
+                        >Make a BOT Mix</ Link>
                     </div>
                     </div>
               

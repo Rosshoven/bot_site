@@ -16,6 +16,7 @@ import Guan from "./components/guan";
 import Grail from '../src/components/grail';
 import Schubas from "./components/schubas";
 import CreateAccount from "./components/create-account";
+import { AccountProvider } from "./components/account-context";
 
 const router = createBrowserRouter([
   {
@@ -73,7 +74,9 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <AccountProvider>
+      <RouterProvider router={router} />
+    </AccountProvider>
   </React.StrictMode>
 );
 

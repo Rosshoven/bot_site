@@ -84,8 +84,6 @@
  #midLeftB {
     grid-area: 3 / 1 / 4 / 2;
     font-size: 2em;
-    border-top-left-radius: 0%;
-    border-bottom-left-radius: 0%;
  }
 
  #midLeftA {
@@ -149,3 +147,9 @@
     color: #d48c
  }
  
+
+#accountCard {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}

@@ -7,6 +7,7 @@ import Rex from '../tracks/Rex.mp3';
 import BOT_Gun from '../images/BOT_Gun.png';
 import Dog_Motorcycle from '../images/Dog_Motorcycle.png';
 // import Walking from '../images/Walking.jpg';
+import CreateAccount from './create-account';
 
 export default function Grail() {
 
@@ -64,7 +65,8 @@ export default function Grail() {
         </div>
 
         <div id="midRightA" className="box">
-            <button style={{margin: '4%'}} type="button" class="btn btn-outline-dark">Create Account</button> 
+            <CreateAccount />
+            {/* <button style={{margin: '4%'}} type="button" className="btn btn-outline-dark">Create Account</button>  */}
         </div>
 
         <div id="midRightB" className="box">
@@ -119,7 +121,6 @@ export default function Grail() {
                             id="userName"
                             type="userName"
                             placeholder="Username"
-                            // autocomplete="off"
                             // value={values.email}
                             // onChange={handleChange}
                             // onBlur={handleBlur}
@@ -133,7 +134,6 @@ export default function Grail() {
                             id="password"
                             type="password"
                             placeholder="Password"
-                            autocomplete="off"
                             // text="Enter Password"
                             name="password" 
                             // value={values.password}
