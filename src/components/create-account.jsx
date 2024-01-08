@@ -5,13 +5,14 @@ import { useState } from "react";
 // importing the yup schema for formik validation
 import { createSchema } from '../schemas/create-schema';
 // importing the Account Context
-import { useAccountContext } from "./account-context";
+import { useAccountContext } from "./account-context.jsx";
+
 import { Link } from "react-router-dom";
 import '../index.css'; 
 
 // import { useBalanceContext } from "./balance-context";
 
-export default function BasicForm() {
+export default function CreateAccount() {
     // defining the handleSetAccountData by destructring. Will be imperitive to use to update the accounts, coming from the Account Context so it will be saved.
     const { handleSetAccountData, setLoggedIn } = useAccountContext();
     // const {balance, setBalance} = useBalanceContext();

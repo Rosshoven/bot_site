@@ -15,6 +15,7 @@ import If from "./components/if";
 import Guan from "./components/guan";
 import Grail from '../src/components/grail';
 import Schubas from "./components/schubas";
+import CreateAccount from "./components/create-account";
 
 const router = createBrowserRouter([
   {
@@ -61,7 +62,7 @@ const router = createBrowserRouter([
       },
       {
         path: 'create-account',
-        element: <createAccount />
+        element: <CreateAccount />
       }
 
     ]
