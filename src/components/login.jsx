@@ -143,16 +143,17 @@ export default function Login() {
                 }}>
 
                             <h6 style={{
-                        backgroundColor: 'pink',
-                        borderRadius: '.5rem', 
-                        border: '1px black solid'
+                                    backgroundColor: 'pink',
+                                    borderRadius: '.5rem', 
+                                    border: '1px black solid',
+                                    padding: '0 1%',
                             }}>Welcome Back {accounts.map((account) => account.userName)}</h6>
 
                             <a style={{
-                        backgroundColor: 'pink', 
-                        border: '1px black solid',
-                        maxWidth: '50%',
-                        fontSize: '.7rem'
+                                    backgroundColor: 'pink', 
+                                    border: '1px black solid',
+                                    maxWidth: '50%',
+                                    fontSize: '.7rem'
                             }}className=" btn btn-outline-success"
                             href='guan'
                             >Let's Rawk!</ a>
