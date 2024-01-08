@@ -6,7 +6,7 @@ import BOT_Logo from '../images/BOT_Logo.png';
 import Rex from '../tracks/Rex.mp3';
 import BOT_Gun from '../images/BOT_Gun.png';
 import Dog_Motorcycle from '../images/Dog_Motorcycle.png';
-import Walking from '../images/Walking.jpg';
+// import Walking from '../images/Walking.jpg';
 
 export default function Grail() {
 
