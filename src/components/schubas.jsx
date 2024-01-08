@@ -1,11 +1,12 @@
 import Album from './album';
+import Walking from '../images/Walking.jpg'
 
 export default function Schubas() {
 
     return(
 
     <div style={{backgroundColor: 'pink', padding: '.1rem'}}>
-        <Album image={} 
+        <Album image={Walking} 
                description={`If it's the last thing we do Album Cover`} 
                albumTitle={`If it's the last thing we do...`}
                albumDetail1={`Recorded by Boys On Trial`}
@@ -22,11 +23,11 @@ export default function Schubas() {
                songTitle3={`Look Left`}
                songTitle4={`Say Something`}
                songTitle5={`Get In Line`}
-               track1={}
-               track2={}
-               track3={}
-               track4={}
-               track5={}
+               // track1={}
+               // track2={}
+               // track3={}
+               // track4={}
+               // track5={}
                backgroundColor={'silver'}
                border={'green 2px solid'}
                />

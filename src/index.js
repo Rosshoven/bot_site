@@ -14,6 +14,7 @@ import Album from "./components/album";
 import If from "./components/if";
 import Guan from "./components/guan";
 import Grail from '../src/components/grail';
+import Schubas from "./components/schubas";
 
 const router = createBrowserRouter([
   {
@@ -54,6 +55,10 @@ const router = createBrowserRouter([
         path: 'grail',
         element: <Grail />
       },
+      {
+        path: 'schubas',
+        element: <Schubas />
+      }
 
     ]
   },
