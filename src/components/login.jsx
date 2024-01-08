@@ -132,21 +132,32 @@ export default function Login() {
             </form> 
         </div>
         : (
-                <>
-                <div className='card form-control relative' style={{ borderSizing: 'border-box', backgroundColor: 'lightblue', position: 'static', paddingBottom: '100%'}}>
-                <div className="card w-50" style={{marginTop: '20%', marginRight: 'auto', marginLeft: 'auto', backgroundColor: 'pink', border: '2px solid green'}}>
-                    <div className="card-body">
-                        <h5 className="card-title">Welcome Back {accounts.map((account) => account.userName)}</h5>
-                        <Link type="submit" className="btn btn-success" 
-                        // setter function setShow(true) for the onClick makes the create account form return to the page
-                        // onClick={() => setShow(true)}
-                        to={'/guan'}
-                        >Let's Bank</Link>
-                    </div>
-                    </div>
-              
-              </div>
-              </>
+
+
+
+            <div style={{
+                margin: '0 3%',
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center'
+                }}>
+
+                            <h6 style={{
+                        backgroundColor: 'pink',
+                        borderRadius: '.5rem', 
+                        border: '1px black solid'
+                            }}>Welcome Back {accounts.map((account) => account.userName)}</h6>
+
+                            <a style={{
+                        backgroundColor: 'pink', 
+                        border: '1px black solid',
+                        maxWidth: '50%',
+                        fontSize: '.7rem'
+                            }}className=" btn btn-outline-success"
+                            href='guan'
+                            >Let's Rawk!</ a>
+
+        </div>
 
             )
 

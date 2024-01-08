@@ -5,7 +5,7 @@ const passwordRules = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9]).{5,}$/
 
 // this yup validation function is exported to - imported by create-account.jsx
 export const loginSchema = yup.object().shape({
-    email: yup.string().email("Please enter a valid email").required("Required"),
+    userName: yup.string().min(5).max(20).required("Required"),
     password: yup
         .string()
         .min(5)
