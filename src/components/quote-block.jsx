@@ -16,15 +16,15 @@ const styles = {
   container: {
     border: '1px solid #ddd',
     borderRadius: '8px',
-    padding: '16px',
-    margin: '16px 0',
+    padding: '1.5%',
+    margin: '1rem auto',
     // backgroundColor: '#f9f9f9',
-    backgroundColor: 'black'
+    backgroundColor: 'black', 
+    height: '80%'
   },
   quote: {
     fontSize: '1.2em',
     fontStyle: 'italic',
-    marginBottom: '8px',
     textAlign: 'left',
     color: 'yellow'
   },
@@ -32,7 +32,7 @@ const styles = {
     textAlign: 'right',
     fontStyle: 'normal',
     // color: '#777',
-    color: 'yellow'
+    color: 'yellow',
 
   },
 };
