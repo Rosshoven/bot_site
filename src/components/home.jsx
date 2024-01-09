@@ -10,7 +10,7 @@ import Dog_Motorcycle from '../images/Dog_Motorcycle.png';
 import CreateAccount from './create-account';
 import Login from './login';
 
-export default function Grail() {
+export default function Home() {
 
     const inputStyle = {
                         width: '90%',

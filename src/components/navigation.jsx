@@ -30,7 +30,7 @@ export default function Navigation() {
         </li>
 
         <li className="nav-item">
-          <a href='/pics' className="nav-link active">Pics</a>
+          <a href='pics' className="nav-link active">Pics</a>
         </li>
 
         <li className="nav-item dropdown">
