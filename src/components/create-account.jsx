@@ -96,8 +96,10 @@ export default function CreateAccount() {
         <div className='card form-control relative' 
         style={{ 
             backgroundColor: '#d48c', 
-            margin: '4rem auto 0 auto', 
-            padding: '3% 0% 30% 0%' }}
+            marginTop: '3%', 
+            padding: '5%',
+            height: '100vh'
+         }}
             >
 
             <form onSubmit={handleSubmit} autoComplete="off">
@@ -116,7 +118,6 @@ export default function CreateAccount() {
                         borderRadius: '1rem', 
                         fontFamily: 'Forum, cursive', 
                         fontSize: '1rem', 
-                        // fontWeight: 'bold', 
                         display: 'flex', 
                         justifyContent: 'center' }}
                         >{createAccountTrue ? 'Create Another Account': 'Create Account'}</button>
@@ -157,7 +158,6 @@ export default function CreateAccount() {
 
 
                     </div>
-                {/* </div> */}
             </form> 
         </div>
         : (

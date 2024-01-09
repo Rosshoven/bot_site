@@ -78,10 +78,12 @@ export default function Login() {
         // show initial state is true so the form starting below will be displayed
         show ? 
         
-        <div className='card form-control relative' style={{ 
+        <div className='card form-control relative' 
+        style={{ 
             backgroundColor: '#d48c', 
-            margin: '4rem auto 0 auto', 
-            padding: '3% 0% 30% 0%' }}
+            // marginTop: '1%', 
+            padding: '5%',
+            height: '100vh' }}
             >
 
             <form onSubmit={handleSubmit} autoComplete="off">
