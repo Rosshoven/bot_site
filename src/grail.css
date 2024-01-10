@@ -160,12 +160,12 @@
     /* width: 100%; */
     min-height: 100vh;
     padding: 4% 5%;
-    position: static;
+    position: relative;
     display: grid;
     grid-template-columns: repeat(4, 1fr) ;
     grid-template-rows: repeat(5, 1fr);
     gap: .3%;  
-    text-align: center;
+    /* text-align: center; */
     background-color: #000000;
     margin: 4rem auto 0 auto;
 }
