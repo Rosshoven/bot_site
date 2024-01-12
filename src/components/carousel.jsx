@@ -13,7 +13,7 @@ const buttonStyle = {
     border: '2px solid black', 
     height: '3rem', 
     backgroundColor: 'black',
-    color: 'pink',
+    color: 'rgb(211, 212, 211)',
     margin: '.5rem'
 }
 
@@ -56,9 +56,10 @@ const PhotoCarousel = ({ title, images, interval = 3000 }) => {
         <h1 style={{
             marginTop: '3rem', 
             backgroundColor: 'black', 
-            color: 'pink', 
+            color: 'rgb(211, 212, 211)', 
             padding: '1rem', 
             borderRadius: '1rem', 
+            fontFamily: 'Rubik Moonrocks, sans-serif',
             // alignItems: 'center'
             }}>{title}</h1>
 
