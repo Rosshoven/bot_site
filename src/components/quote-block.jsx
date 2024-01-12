@@ -18,13 +18,14 @@ const styles = {
     borderRadius: '8px',
     padding: '1.5%',
     margin: '1rem auto',
-    // backgroundColor: '#f9f9f9',
     backgroundColor: 'black', 
-    height: '80%'
+    height: '80%',
+    fontStyle: 'Rock Salt, cursive'
+
   },
   quote: {
     fontSize: '1.2em',
-    fontStyle: 'italic',
+    fontStyle: 'Rock Salt, cursive',
     textAlign: 'left',
     color: 'yellow'
   },

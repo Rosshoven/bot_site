@@ -109,7 +109,7 @@ export default function Login() {
      
                         <input
                             style={inputStyle}
-                            id="userName"
+                            id="loginUserName"
                             type="text"
                             placeholder="Enter Username"
                             value={values.userName}
@@ -121,7 +121,7 @@ export default function Login() {
                         {/* <label htmlFor="password">Password</label> */}
                         <input
                             style={inputStyle}
-                            id="password"
+                            id="loginPassword"
                             type="password"
                             placeholder="Enter password"
                             value={values.password}

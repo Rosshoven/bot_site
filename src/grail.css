@@ -154,6 +154,12 @@
    align-items: center;
 }
 
+/* #loginCard {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+} */
+
 /* ABOUT PAGE CSS */
 
 .quoteWrapper {
