@@ -18,7 +18,7 @@ const styles = {
     backgroundClip: 'padding-box',
     borderImage: 'linear-gradient(to right, #d48c, silver)', /* Use your gradient colors */
     borderImageSlice: '1',
-    borderRadius: '',
+    // borderRadius: '',
     padding: '1.5%',
     margin: '1rem auto',
     backgroundColor: 'black', 
@@ -29,13 +29,13 @@ const styles = {
     fontSize: '1.1em',
     fontStyle: 'Rock Salt',
     textAlign: 'left',
-    color: 'yellow'
+    color: '#f1df3a'
   },
   author: {
     textAlign: 'right',
     fontStyle: 'normal',
     // color: '#777',
-    color: 'yellow',
+    color: '#f1df3a',
 
   },
 };
